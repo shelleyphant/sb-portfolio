@@ -9,11 +9,13 @@ export default function ContactForm({ Component, pageProps }) {
     
     return (
         <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Name</label>
+            <input id="name" type="text" name="name"></input>
             <label htmlFor="email">Email</label>
             <input id="email" type="email" name="email" />
-            <label htmlFor="message">message</label>
+            <label htmlFor="message">Message</label>
             <textarea id="message" type="text" name="message"></textarea>
-            <button type="submit" disabled={state.submitting}>Sign up</button>
+            <button type="submit" className="button" disabled={state.submitting}>Sign up</button>
         </form>
     )
 }
