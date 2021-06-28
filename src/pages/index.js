@@ -1,8 +1,12 @@
 import React from 'react'
 import Layout from "../components/Layout";
+import ContactForm from '../components/ContactForm';
 import * as Icon  from "react-feather";
+import {Link} from "gatsby"
+import {FormspreeProvider} from '@formspree/react';
 
-export default function index() {
+
+export default function index({ Component, pageProps }) {
   return (
     <Layout>
       <section id="welcome">
@@ -32,9 +36,48 @@ export default function index() {
       </section>
       <section id="work">
         <h2>Selected Work</h2>
+        <div className="case-study">
+          <h3>project name</h3>
+          <p>Project tagline</p>
+          <ul className="social-links">
+            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
+            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
+          </ul>
+          <Link to="/" className="button">Learn More</Link>
+        </div>
+        <div className="case-study">
+          <h3>project name</h3>
+          <p>Project tagline</p>
+          <ul className="social-links">
+            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
+            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
+          </ul>
+          <Link to="/" className="button">Learn More</Link>
+        </div>
+        <div className="case-study">
+          <h3>project name</h3>
+          <p>Project tagline</p>
+          <ul className="social-links">
+            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
+            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
+          </ul>
+          <Link to="/" className="button">Learn More</Link>
+        </div>
+        <div className="case-study">
+          <h3>project name</h3>
+          <p>Project tagline</p>
+          <ul className="social-links">
+            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
+            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
+          </ul>
+          <Link to="/" className="button">Learn More</Link>
+        </div>
       </section>
       <section id="contact">
         <h2>Get in Contact</h2>
+        <FormspreeProvider project="1710348955751022432">
+          <ContactForm {...pageProps} />
+        </FormspreeProvider>
       </section>
     </Layout>
   )
