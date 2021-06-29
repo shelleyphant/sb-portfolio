@@ -4,6 +4,7 @@ import ContactForm from '../components/ContactForm';
 import * as Icon  from "react-feather";
 import {Link} from "gatsby"
 import {FormspreeProvider} from '@formspree/react';
+import { StaticImage } from "gatsby-plugin-image"
 
 
 export default function index({ Component, pageProps }) {
@@ -37,38 +38,39 @@ export default function index({ Component, pageProps }) {
       <section id="work">
         <h2>Selected Work</h2>
         <div className="case-study">
+          {/* <StaticImage src="../images/pug.jpg" alt="Pug painting by Joanne Bingham" /> */}
           <h3>project name</h3>
           <p>Project tagline</p>
-          <ul className="social-links">
+          <ul className="code-links">
             <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
+            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
+          </ul>
+          <Link to="/" className="button">Learn More</Link>
+        </div>
+        <div className="case-study">
+          <h3>joannebingham.com</h3>
+          <p>Portfolio and ecommerce website</p>
+          <ul className="code-links">
+            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
+            <li><a href="https://www.joannebingham.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
           </ul>
           <Link to="/" className="button">Learn More</Link>
         </div>
         <div className="case-study">
           <h3>project name</h3>
           <p>Project tagline</p>
-          <ul className="social-links">
+          <ul className="code-links">
             <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
+            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
           </ul>
           <Link to="/" className="button">Learn More</Link>
         </div>
         <div className="case-study">
           <h3>project name</h3>
           <p>Project tagline</p>
-          <ul className="social-links">
+          <ul className="code-links">
             <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
-          </ul>
-          <Link to="/" className="button">Learn More</Link>
-        </div>
-        <div className="case-study">
-          <h3>project name</h3>
-          <p>Project tagline</p>
-          <ul className="social-links">
-            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.Link /></a></li>
+            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
           </ul>
           <Link to="/" className="button">Learn More</Link>
         </div>
