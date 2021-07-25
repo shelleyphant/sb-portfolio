@@ -19,6 +19,26 @@ h1 {
     line-height: 50px;
 }
 
+h2 {
+    color: #4D4D4D;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+        content: "";
+        background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%);
+        width: 200px;
+        height: 2px;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
 h3, p, label {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -205,6 +225,15 @@ a {
     }
 }
 
+.content {
+    border-top: #F8F8F8 solid 2px;
+    padding: 50px;
+
+    &:first-of-type {
+        border: 0;
+    }
+}
+
 section {
     border-top: #F8F8F8 solid 2px;
     padding: 50px;
@@ -221,26 +250,6 @@ section {
                 left: 0;
                 transform: translate(0, 0);
             }
-        }
-    }
-
-    h2 {
-        color: #4D4D4D;
-        font-family: "Raleway", sans-serif;
-        font-weight: 400;
-        text-align: center;
-        position: relative;
-        margin-bottom: 50px;
-
-        &::after {
-            content: "";
-            background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%);
-            width: 200px;
-            height: 2px;
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translate(-50%, 0);
         }
     }
 }

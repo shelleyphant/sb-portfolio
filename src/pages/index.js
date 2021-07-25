@@ -1,10 +1,12 @@
 import React from 'react'
 import Layout from "../components/Layout";
+import Skill from '../components/Skill'
+import CaseStudy from '../components/CaseStudy'
 import ContactForm from '../components/ContactForm';
-import * as Icon  from "react-feather";
-import {Link} from "gatsby"
+// import * as Icon  from "react-feather";
+// import {Link} from "gatsby"
 import {FormspreeProvider} from '@formspree/react';
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 
 export default function index({ Component, pageProps }) {
@@ -14,67 +16,46 @@ export default function index({ Component, pageProps }) {
         <h2>Welcome</h2>
         <p>Shelley Bassett is a digital interaction designer based in Melbourne, Aus</p>
       </section>
+
       <section id="about">
         <h2>About Shelley</h2>
       </section>
+
       <section id="expertise">
         <h2>Expertise</h2>
-        <div className="skill">
-          <div><Icon.Monitor/></div>
-          <h3>Responsive Usability</h3>
-          <p>Duis malesuada vitae nisi sed scelerisque. Mauris dictum consequat orci in vestibulum.</p>
-        </div>
-        <div className="skill">
-        <div><Icon.Users/></div>
-          <h3>User Centric</h3>
-          <p>Duis malesuada vitae nisi sed scelerisque. Mauris dictum consequat orci in vestibulum.</p>
-        </div>
-        <div className="skill">
-        <div><Icon.Zap/></div>
-          <h3>SEO Focused</h3>
-          <p>Duis malesuada vitae nisi sed scelerisque. Mauris dictum consequat orci in vestibulum.</p>
-        </div>
+        <Skill icon='monitor' heading='Responsive Usability'/>
+        <Skill icon='users' heading='User Centric' />
+        <Skill icon='zap' heading='SEO Focused' />
       </section>
+
       <section id="work">
         <h2>Selected Work</h2>
-        <div className="case-study">
-          {/* <StaticImage src="../images/pug.jpg" alt="Pug painting by Joanne Bingham" /> */}
-          <h3>project name</h3>
-          <p>Project tagline</p>
-          <ul className="code-links">
-            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
-          </ul>
-          <Link to="/" className="button">Learn More</Link>
-        </div>
-        <div className="case-study">
-          <h3>joannebingham.com</h3>
-          <p>Portfolio and ecommerce website</p>
-          <ul className="code-links">
-            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.joannebingham.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
-          </ul>
-          <Link to="/" className="button">Learn More</Link>
-        </div>
-        <div className="case-study">
-          <h3>project name</h3>
-          <p>Project tagline</p>
-          <ul className="code-links">
-            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
-          </ul>
-          <Link to="/" className="button">Learn More</Link>
-        </div>
-        <div className="case-study">
-          <h3>project name</h3>
-          <p>Project tagline</p>
-          <ul className="code-links">
-            <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-            <li><a href="https://www.google.com" title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
-          </ul>
-          <Link to="/" className="button">Learn More</Link>
-        </div>
+        <CaseStudy 
+          heading='coloretur.com'
+          tagline='Digital colour palette samples'
+          live=''
+          link='/projects/coloretur'
+        />
+        <CaseStudy 
+          heading='joannebingham.com'
+          tagline='Artist portfolio and ecommerce website'
+          live=''
+          link='/projects/joannebingham'
+        />
+        <CaseStudy 
+          heading='Mongol Ulus Duu'
+          tagline='Mongolian Instrument App'
+          live=''
+          link='/projects/mongolulusduu'
+        />
+        <CaseStudy 
+          heading=''
+          tagline=''
+          live=''
+          link='/'
+        />
       </section>
+
       <section id="contact">
         <h2>Get in Contact</h2>
         <FormspreeProvider project="1710348955751022432">
