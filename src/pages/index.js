@@ -5,7 +5,7 @@ import CaseStudy from '../components/CaseStudy'
 import ContactForm from '../components/ContactForm';
 // import * as Icon  from "react-feather";
 // import {Link} from "gatsby"
-import {FormspreeProvider} from '@formspree/react';
+import { FormspreeProvider } from '@formspree/react';
 import { StaticImage } from "gatsby-plugin-image"
 
 
@@ -71,7 +71,7 @@ export default function index({ Component, pageProps }) {
       <section id="contact">
         <h2>Get in Contact</h2>
         <FormspreeProvider project="1710348955751022432">
-          <ContactForm {...pageProps} />
+          <ContactForm />
         </FormspreeProvider>
       </section>
     </Layout>
