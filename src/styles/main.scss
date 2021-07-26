@@ -47,6 +47,9 @@ h3, p, label {
 a {
     text-decoration: none;
 }
+p {
+    margin-bottom: 25px;
+}
 
 
 .layout {
@@ -237,6 +240,7 @@ a {
 section {
     border-top: #F8F8F8 solid 2px;
     padding: 50px;
+    overflow: auto;
 
     &:first-of-type {
         border: 0;
@@ -252,6 +256,14 @@ section {
             }
         }
     }
+
+    .candid1 {
+        float: left;
+        width: 35%;
+        // margin-top: -90px;
+        max-height: 300px;
+        margin-right: 5%;
+    }
 }
 
 #welcome {
@@ -259,6 +271,13 @@ section {
         margin: 50px 0;
         font-size: 1.3em;
         width: 60%;
+        display: inline-block;
+    }
+    .portrait {
+        float: right;
+        width: 35%;
+        margin-top: -90px;
+        max-height: 300px;
     }
 }
 #expertise {
@@ -405,7 +424,6 @@ form {
     overflow: auto;
     
     label {
-        font-size: 0.8em;
         font-weight: 400;
         margin-top: 10px;
         display: block;
@@ -414,13 +432,12 @@ form {
     input, textarea {
         border: 1px solid lightgrey;
         border-radius: 4px;
-        box-shadow: 0 0 6px 0 lightgrey inset;
         padding: 5px 8px;
         width: 100%;
-        font-size: 0.85em;
+        font-size: 1.2em;
         line-height: 1.5em !important;
-        font-size: 0.9em;
         margin: 5px 0;
+        font-family: "Roboto", sans-serif;
     }
 
     textarea {

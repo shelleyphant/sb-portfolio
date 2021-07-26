@@ -15,7 +15,7 @@ export default function ContactForm({ Component, pageProps }) {
             <input id="email" type="email" name="email" />
             <label htmlFor="message">Message</label>
             <textarea id="message" type="text" name="message"></textarea>
-            <button type="submit" className="button" disabled={state.submitting}>Sign up</button>
+            <button type="submit" className="button" disabled={state.submitting}>Send</button>
         </form>
     )
 }
