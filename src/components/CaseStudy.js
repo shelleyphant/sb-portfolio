@@ -3,8 +3,10 @@ import * as Icon from 'react-feather'
 import { Link } from 'gatsby'
 
 export default function CaseStudy(props) {
+    const classes = 'case-study ' + props.className;
+
     return (
-        <div className='case-study'>
+        <div className={props.className ? classes : 'case-study'}>
             <h3>{props.heading}</h3>
             <p>{props.tagline}</p>
             <ul className='code-links'>

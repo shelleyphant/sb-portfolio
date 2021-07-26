@@ -38,25 +38,29 @@ export default function index({ Component, pageProps }) {
 
       <section id="work">
         <h2>Selected Work</h2>
-        <CaseStudy 
+        <CaseStudy
+          className='coloretur'
           heading='coloretur.com'
           tagline='Digital colour palette samples'
           live='https://coloretur.com'
           link='/projects/coloretur'
         />
         <CaseStudy 
+          className='jobing'
           heading='joannebingham.com'
           tagline='Artist portfolio and ecommerce website'
           live='https://joannebingham.com'
           link='/projects/joannebingham'
         />
         <CaseStudy 
+          className='mongol'
           heading='Mongol Ulus Duu'
           tagline='Mongolian Instrument App'
           live=''
           link='/projects/mongolulusduu'
         />
         <CaseStudy 
+          className='mim'
           heading='Massacre in Melbourne'
           tagline='AR walking tour concept'
           live=''

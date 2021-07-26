@@ -358,7 +358,6 @@ section {
         &::before {
             content: "";
             background-color: #62b1a242;
-            background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/pug-bw.jpg);
             background-blend-mode: multiply;
             background-position: center;
             background-repeat: no-repeat;
@@ -375,6 +374,7 @@ section {
         h3, p{
             color: white;
             margin: 20px 0;
+            text-shadow: 0 0 5px black;
         }
     }
 
@@ -415,6 +415,19 @@ section {
         color: white;
         margin-top: 0;
     }
+}
+
+.coloretur::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/halftone-grey-01.png);
+}
+.jobing::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/pug-bw.jpg);
+}
+.mongol::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/mongolgong.png);
+}
+.mim::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/massacreinmelbourne.png);
 }
 
 form {
