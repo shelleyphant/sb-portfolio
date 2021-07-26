@@ -7,6 +7,15 @@ module.exports = {
     title: "sb_portfolio",
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Shelley Bassett',
+        short_name: 'Shelley Bassett',
+        start_url: '/',
+        icon: 'src/images/SB_monogram.png'
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",

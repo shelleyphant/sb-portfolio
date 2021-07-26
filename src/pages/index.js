@@ -57,10 +57,10 @@ export default function index({ Component, pageProps }) {
           link='/projects/mongolulusduu'
         />
         <CaseStudy 
-          heading=''
-          tagline=''
+          heading='Massacre in Melbourne'
+          tagline='AR walking tour concept'
           live=''
-          link='/'
+          link='/projects/massacreinmelbourne'
         />
       </section>
 
