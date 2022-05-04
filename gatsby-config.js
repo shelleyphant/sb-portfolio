@@ -4,9 +4,19 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "sb_portfolio",
+    title: 'Shelley Bassett',
+    siteUrl: 'https://shelleybassett.com'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Shelley Bassett',
+        short_name: 'Shelley Bassett',
+        start_url: '/',
+        icon: 'src/images/SB_monogram.png'
+      },
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",

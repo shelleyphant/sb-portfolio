@@ -19,6 +19,26 @@ h1 {
     line-height: 50px;
 }
 
+h2 {
+    color: #4D4D4D;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+        content: "";
+        background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%);
+        width: 200px;
+        height: 2px;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
 h3, p, label {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -26,6 +46,9 @@ h3, p, label {
 }
 a {
     text-decoration: none;
+}
+p {
+    margin-bottom: 25px;
 }
 
 
@@ -205,9 +228,19 @@ a {
     }
 }
 
+.content {
+    border-top: #F8F8F8 solid 2px;
+    padding: 50px;
+
+    &:first-of-type {
+        border: 0;
+    }
+}
+
 section {
     border-top: #F8F8F8 solid 2px;
     padding: 50px;
+    overflow: auto;
 
     &:first-of-type {
         border: 0;
@@ -224,24 +257,12 @@ section {
         }
     }
 
-    h2 {
-        color: #4D4D4D;
-        font-family: "Raleway", sans-serif;
-        font-weight: 400;
-        text-align: center;
-        position: relative;
-        margin-bottom: 50px;
-
-        &::after {
-            content: "";
-            background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%);
-            width: 200px;
-            height: 2px;
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
+    .candid1 {
+        float: left;
+        width: 35%;
+        // margin-top: -90px;
+        max-height: 300px;
+        margin-right: 5%;
     }
 }
 
@@ -250,6 +271,13 @@ section {
         margin: 50px 0;
         font-size: 1.3em;
         width: 60%;
+        display: inline-block;
+    }
+    .portrait {
+        float: right;
+        width: 35%;
+        margin-top: -90px;
+        max-height: 300px;
     }
 }
 #expertise {
@@ -330,7 +358,6 @@ section {
         &::before {
             content: "";
             background-color: #62b1a242;
-            background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/pug-bw.jpg);
             background-blend-mode: multiply;
             background-position: center;
             background-repeat: no-repeat;
@@ -347,6 +374,7 @@ section {
         h3, p{
             color: white;
             margin: 20px 0;
+            text-shadow: 0 0 5px black;
         }
     }
 
@@ -389,6 +417,19 @@ section {
     }
 }
 
+.coloretur::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/halftone-grey-01.png);
+}
+.jobing::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/pug-bw.jpg);
+}
+.mongol::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/mongolgong.png);
+}
+.mim::before {
+    background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%), url(../../static/images/massacreinmelbourne.png);
+}
+
 form {
     width: 80%;
     margin: auto;
@@ -396,7 +437,6 @@ form {
     overflow: auto;
     
     label {
-        font-size: 0.8em;
         font-weight: 400;
         margin-top: 10px;
         display: block;
@@ -405,13 +445,12 @@ form {
     input, textarea {
         border: 1px solid lightgrey;
         border-radius: 4px;
-        box-shadow: 0 0 6px 0 lightgrey inset;
         padding: 5px 8px;
         width: 100%;
-        font-size: 0.85em;
+        font-size: 1.2em;
         line-height: 1.5em !important;
-        font-size: 0.9em;
         margin: 5px 0;
+        font-family: "Roboto", sans-serif;
     }
 
     textarea {
