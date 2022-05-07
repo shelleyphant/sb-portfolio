@@ -30,8 +30,8 @@
     "gatsby-source-filesystem": "^4.13.0",
     "gatsby-source-formspree": "0.0.2",
     "gatsby-transformer-sharp": "^4.13.0",
-    "react": "^17",
-    "react-dom": "^17",
+    "react": "^18",
+    "react-dom": "^18",
     "react-feather": "^2.0.9",
     "react-helmet": "^6.1.0",
     "sass": "^1.36.0"
