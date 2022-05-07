@@ -14,11 +14,11 @@ export default function index({ Component, pageProps }) {
     <Layout>
       <section id="welcome">
         <h2>Welcome</h2>
-        <p>Shelley Bassett is a digital interaction designer based in Melbourne, Aus</p>
+        <p>Shelley Bassett is a digital designer/developer based in Melbourne, Aus</p>
         <StaticImage src='../images/shelley bassett.jpeg' className='portrait'/>
       </section>
 
-      <section id="about">
+      <section id="about" className='content'>
         <h2>About Shelley</h2>
         <StaticImage src='../images/shelley and chester 1.jpeg' className='candid1'/>
         <p>
@@ -26,6 +26,9 @@ export default function index({ Component, pageProps }) {
         </p>
         <p>
           Shelley likes to design her projects to be fast, responsive and perform well on new and old machines while still being accessible to users and search engines. She has extensive experience with Wordpress, and is currently exploring the world of flat and headless CMS's, in addition to libraries like React.
+        </p>
+        <p>
+            In 2020, Shelley founded <a href='https://www.brolgadigital.com.au' target={"_blank"} rel="noopener noreferrer">Brolga Digital</a>, a small agency using her freelance contacts to build better experiences for her clients.
         </p>
       </section>
 
