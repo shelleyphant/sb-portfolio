@@ -12,7 +12,7 @@ export default function Header() {
                 <ul>
                     <li><AnchorLink to="/#about" title="About">About</AnchorLink></li>
                     <li><AnchorLink to="/#work" title="Work">Work</AnchorLink></li>
-                    <li><AnchorLink title="Download PDF Resume">Resume</AnchorLink></li>
+                    <li><a title="Download PDF Resume">Resume</a></li>
                     <li><AnchorLink to="/#contact" title="Contact">Contact</AnchorLink></li>
                 </ul>
             </div>

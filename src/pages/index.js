@@ -3,24 +3,25 @@ import Layout from "../components/Layout";
 import Skill from '../components/Skill'
 import CaseStudy from '../components/CaseStudy'
 import ContactForm from '../components/ContactForm';
+import { graphql } from "gatsby"
 // import * as Icon  from "react-feather";
 // import {Link} from "gatsby"
 import { FormspreeProvider } from '@formspree/react';
 import { StaticImage } from "gatsby-plugin-image"
 
 
-export default function index({ Component, pageProps }) {
+export default function index({ data }) {
   return (
     <Layout>
       <section id="welcome">
         <h2>Welcome</h2>
         <p>Shelley Bassett is a digital designer/developer based in Melbourne, Aus</p>
-        <StaticImage src='../images/shelley bassett.jpeg' className='portrait'/>
+        <StaticImage src='../images/shelley bassett.jpeg' className='portrait' alt='Portrait of Shelley Bassett'/>
       </section>
 
       <section id="about" className='content'>
         <h2>About Shelley</h2>
-        <StaticImage src='../images/shelley and chester 1.jpeg' className='candid1'/>
+        <StaticImage src='../images/shelley and chester 1.jpeg' className='candid1' alt='Shelley Bassett and her ginger cat Chester'/>
         <p>
           Shelley Bassett is a digital designer based in Melbourne, Australia. She specialises in full-stack websites and applications, and likes to experiment with branding and typography. She can often be found with her pets, and spends her free time illustrating and designing.
         </p>
@@ -44,7 +45,19 @@ export default function index({ Component, pageProps }) {
 
       <section id="work">
         <h2>Selected Work</h2>
-        <CaseStudy
+
+        {data.allMdx.edges.map(({node}) => {
+          return (
+            <CaseStudy
+              heading={node.frontmatter.title}
+              tagline={node.id}
+              live={node.frontmatter.site ? node.frontmatter.site : ''}
+              link={node.frontmatter.slug}
+              image={node.frontmatter.thumbnail}
+            />
+          )
+        })}
+        {/* <CaseStudy
           className='coloretur'
           heading='coloretur.com'
           tagline='Digital colour palette samples'
@@ -71,7 +84,7 @@ export default function index({ Component, pageProps }) {
           tagline='AR walking tour concept'
           live=''
           link='/projects/massacreinmelbourne'
-        />
+        /> */}
       </section>
 
       <section id="contact">
@@ -83,3 +96,25 @@ export default function index({ Component, pageProps }) {
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query MDXPages {
+    allMdx {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            slug
+            site
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

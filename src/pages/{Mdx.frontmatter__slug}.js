@@ -5,10 +5,6 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 export default function Template({data}) {
-
-    // const { markdownRemark } = data
-    // const { frontmatter, html } = markdownRemark
-
     return (
         <>
             <Layout>
