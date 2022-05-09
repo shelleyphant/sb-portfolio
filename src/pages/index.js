@@ -57,34 +57,6 @@ export default function index({ data }) {
             />
           )
         })}
-        {/* <CaseStudy
-          className='coloretur'
-          heading='coloretur.com'
-          tagline='Digital colour palette samples'
-          live='https://coloretur.com'
-          link='/projects/coloretur'
-        />
-        <CaseStudy 
-          className='jobing'
-          heading='joannebingham.com'
-          tagline='Artist portfolio and ecommerce website'
-          live='https://joannebingham.com'
-          link='/projects/joannebingham'
-        />
-        <CaseStudy 
-          className='mongol'
-          heading='Mongol Ulus Duu'
-          tagline='Mongolian Instrument App'
-          live=''
-          link='/projects/mongolulusduu'
-        />
-        <CaseStudy 
-          className='mim'
-          heading='Massacre in Melbourne'
-          tagline='AR walking tour concept'
-          live=''
-          link='/projects/massacreinmelbourne'
-        /> */}
       </section>
 
       <section id="contact">
