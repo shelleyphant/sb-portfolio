@@ -11,7 +11,7 @@ export default function CaseStudy(props) {
                 <p>{props.tagline}</p>
                 <ul className='code-links'>
                     <li><a href="https://github.com/shelleyphant" title="Veiw Source Code" aria-label="Source Code"><Icon.Code /></a></li>
-                    <li key='2'><a href={props.live} title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
+                    <li><a href={props.live} title="View Live Site" aria-label="Live Project"><Icon.ExternalLink /></a></li>
                 </ul>
                 <Link to={props.link} className="button">Learn More</Link>
             </div>
