@@ -34,8 +34,11 @@ export default function index({ Component, pageProps }) {
 
       <section id="expertise">
         <h2>Expertise</h2>
-        <Skill icon='monitor' heading='Responsive Usability' desc='Web apps that are fully responsive and usable across multiple screens, from mobile to 4K'/>
-        <Skill icon='users' heading='User Centric' desc='Designs that cater to all user types, from those with imparments to the technologically-challenged'/>
+        <Skill icon='monitor' heading='Responsive Designs' desc='Web apps that are fully responsive and usable across multiple screens, from mobile to 4K'/>
+        <Skill icon='users' heading='User Centric' desc='Designs that cater to all user types, and use A11y practices to make a better experience for everyone'/>
+        <Skill icon='zap' heading='Interactive' desc='Animations, storytelling and sounds create immersive and captivating experiences'/>
+        <Skill icon='zap' heading='Cutting Edge' desc='Projects evolve with technology stacks, using the latest and greatest'/>
+        <Skill icon='zap' heading='Data-Driven' desc='How users interact with elements determines the adjustments that need to be made'/>
         <Skill icon='zap' heading='SEO Focused' desc='Ensuring that search engines can crawl pages, making them findable by anyone'/>
       </section>
 
