@@ -3,24 +3,25 @@ import Layout from "../components/Layout";
 import Skill from '../components/Skill'
 import CaseStudy from '../components/CaseStudy'
 import ContactForm from '../components/ContactForm';
+import { graphql } from "gatsby"
 // import * as Icon  from "react-feather";
 // import {Link} from "gatsby"
 import { FormspreeProvider } from '@formspree/react';
 import { StaticImage } from "gatsby-plugin-image"
 
 
-export default function index({ Component, pageProps }) {
+export default function index({ data }) {
   return (
     <Layout>
       <section id="welcome">
         <h2>Welcome</h2>
         <p>Shelley Bassett is a digital designer/developer based in Melbourne, Aus</p>
-        <StaticImage src='../images/shelley bassett.jpeg' className='portrait'/>
+        <StaticImage src='../images/shelley bassett.jpeg' className='portrait' alt='Portrait of Shelley Bassett'/>
       </section>
 
       <section id="about" className='content'>
         <h2>About Shelley</h2>
-        <StaticImage src='../images/shelley and chester 1.jpeg' className='candid1'/>
+        <StaticImage src='../images/shelley and chester 1.jpeg' className='candid1' alt='Shelley Bassett and her ginger cat Chester'/>
         <p>
           Shelley Bassett is a digital designer based in Melbourne, Australia. She specialises in full-stack websites and applications, and likes to experiment with branding and typography. She can often be found with her pets, and spends her free time illustrating and designing.
         </p>
@@ -34,41 +35,28 @@ export default function index({ Component, pageProps }) {
 
       <section id="expertise">
         <h2>Expertise</h2>
-        <Skill icon='monitor' heading='Responsive Usability' desc='Web apps that are fully responsive and usable across multiple screens, from mobile to 4K'/>
-        <Skill icon='users' heading='User Centric' desc='Designs that cater to all user types, from those with imparments to the technologically-challenged'/>
+        <Skill icon='monitor' heading='Responsive Designs' desc='Web apps that are fully responsive and usable across multiple screens, from mobile to 4K'/>
+        <Skill icon='users' heading='User Centric' desc='Designs that cater to all user types, and use A11y practices to make a better experience for everyone'/>
+        <Skill icon='zap' heading='Interactive' desc='Animations, storytelling and sounds create immersive and captivating experiences'/>
+        <Skill icon='zap' heading='Cutting Edge' desc='Projects evolve with technology stacks, using the latest and greatest'/>
+        <Skill icon='zap' heading='Data-Driven' desc='How users interact with elements determines the adjustments that need to be made'/>
         <Skill icon='zap' heading='SEO Focused' desc='Ensuring that search engines can crawl pages, making them findable by anyone'/>
       </section>
 
       <section id="work">
         <h2>Selected Work</h2>
-        <CaseStudy
-          className='coloretur'
-          heading='coloretur.com'
-          tagline='Digital colour palette samples'
-          live='https://coloretur.com'
-          link='/projects/coloretur'
-        />
-        <CaseStudy 
-          className='jobing'
-          heading='joannebingham.com'
-          tagline='Artist portfolio and ecommerce website'
-          live='https://joannebingham.com'
-          link='/projects/joannebingham'
-        />
-        <CaseStudy 
-          className='mongol'
-          heading='Mongol Ulus Duu'
-          tagline='Mongolian Instrument App'
-          live=''
-          link='/projects/mongolulusduu'
-        />
-        <CaseStudy 
-          className='mim'
-          heading='Massacre in Melbourne'
-          tagline='AR walking tour concept'
-          live=''
-          link='/projects/massacreinmelbourne'
-        />
+
+        {data.allMdx.edges.map(({node}) => {
+          return (
+            <CaseStudy
+              heading={node.frontmatter.title}
+              tagline={node.frontmatter.tagline}
+              live={node.frontmatter.site ? node.frontmatter.site : ''}
+              link={node.frontmatter.slug}
+              image={node.frontmatter.thumbnail}
+            />
+          )
+        })}
       </section>
 
       <section id="contact">
@@ -80,3 +68,26 @@ export default function index({ Component, pageProps }) {
     </Layout>
   )
 }
+
+export const pageQuery = graphql`
+  query MDXPages {
+    allMdx {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            tagline
+            slug
+            site
+            thumbnail {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
