@@ -50,7 +50,7 @@ export default function index({ data }) {
           return (
             <CaseStudy
               heading={node.frontmatter.title}
-              tagline={node.id}
+              tagline={node.frontmatter.tagline}
               live={node.frontmatter.site ? node.frontmatter.site : ''}
               link={node.frontmatter.slug}
               image={node.frontmatter.thumbnail}
@@ -77,6 +77,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            tagline
             slug
             site
             thumbnail {
