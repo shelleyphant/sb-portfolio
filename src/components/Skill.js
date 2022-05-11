@@ -1,11 +1,8 @@
 import React from 'react'
-import { Monitor } from "react-feather";
-import { Users } from "react-feather";
-import { Zap } from "react-feather";
-
+import { Monitor, Users, Zap, Search, Activity, Award } from "react-feather";
 
 export default function Skill(props) {
-    const iconSvg = {'monitor': <Monitor />, 'users': <Users />, 'zap': <Zap />};
+    const iconSvg = {'monitor': <Monitor />, 'users': <Users />, 'zap': <Zap />, 'search': <Search />, 'activity': <Activity />, 'award': <Award />};
     
     return (
         <div className='skill'>
