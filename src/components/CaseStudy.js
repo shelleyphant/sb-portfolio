@@ -15,7 +15,7 @@ export default function CaseStudy(props) {
                 <GatsbyImage image={getImage(props.image)} className='case-study-image' alt=''/>
             </div>
             <div className='case-study-detail'>
-                <ul>{props.techstack.map(e => {
+                <ul className='techstack'>{props.techstack.map(e => {
                     return <li>{e}</li>
                 })}</ul>
                 <Link to={props.link} className="button">Learn More</Link>
