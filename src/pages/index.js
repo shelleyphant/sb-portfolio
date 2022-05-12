@@ -56,6 +56,7 @@ export default function index({ data }) {
               live={node.frontmatter.site ? node.frontmatter.site : ''}
               link={node.frontmatter.slug}
               image={node.frontmatter.thumbnail}
+              techstack={node.frontmatter.techstack}
             />
           )
         })}
@@ -82,6 +83,7 @@ export const pageQuery = graphql`
             tagline
             slug
             site
+            techstack
             thumbnail {
               childImageSharp {
                 gatsbyImageData

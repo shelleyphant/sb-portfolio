@@ -404,87 +404,117 @@ section {
 
     .case-study-wrapper {
         width: 47%;
-        height: 220px;
+        // height: 220px;
         margin-left: 5%;
         margin-top: 5%;
         border-radius: 5px;
         float: left;
-        padding: 30px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
+        
 
         &:nth-child(even) {
             margin-left: 0;
         }
 
-        .case-study {
-            h3, p{
-                color: white;
-                margin: 20px 0;
-                text-shadow: 0 0 5px black;
-            }
+        .case-study-header {
+            height: 180px;
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
 
-            &> div {
-
-                position: absolute;
-                bottom: 30px;
-                right: 30px;
-
-                .code-links {
-                    text-align: center;
-                    list-style: none;
-                    margin-top: 15px;
-                    overflow: auto;
-            
-                    li {
-                    margin-left: 10px;
-                    float: right;
-            
-                        a {
-                            color: #ffffff90;
-            
-                            &::after {
-                                background-color: initial;
-                            }
-                            
-                            &:hover {
-                                color: #ffffff;
-                                background-color: initial;
-            
-                                &::after {
-                                    background-color: initial;
-                                }
-                            }
-            
-                            svg {
-                                width: 15px;
-                            }
-                        }
-                    }
+            .case-study-title {
+                h3, p{
+                    color: white;
+                    margin: 20px 0;
+                    text-shadow: 0 0 5px black;
                 }
 
-                .button {
-                    float: right;
-                    color: white;
-                    margin-top: 0;
+                &> div {
+
+                    position: absolute;
+                    bottom: 30px;
+                    right: 30px;
+                }
+            }
+            .case-study-image {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                opacity: 80%;
+                background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%);
+                border-radius: 5px;
+
+                img {
+                    mix-blend-mode: multiply;
                 }
             }
         }
+        .case-study-detail {
+            border: lightgrey solid 1px;
+            border-top: 0;
+            border-radius:  0 0 5px 5px;
+            padding: 15px 30px;
+            position: relative;
 
-        .case-study-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            opacity: 80%;
-            background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%);
+            .button {
+                margin-top: 0;
+                
+                &::after {
+                    background-color: initial;
+                }
 
-            img {
-                mix-blend-mode: multiply;
+                &:hover {
+                    background-color: #ffffff50;
+
+                    &::after {
+                        background-color: initial;
+                    }
+                }
+            }
+
+            .code-links {
+                list-style: none;
+                margin-top: 5px;
+                margin-left: 8px;
+                overflow: auto;
+                text-align: left;
+        
+                li {
+                    margin-left: 10px;
+                    display: inline-block;
+
+                    &:first-of-type {
+                        margin-left: 0;
+                    }
+
+                    
+                    .icon {
+                        color: #4D4D4D;
+                        margin-top: 0;
+                        padding: 5px 0;
+
+                        &::after {
+                            background-color: initial;
+                        }
+                        
+                        &:hover {
+                            color: #62B1A2;
+                            background-color: initial;
+        
+                            &::after {
+                                background-color: initial;
+                            }
+                        }
+
+                        svg {
+                            width: 15px;
+                        }
+                    }
+                }
             }
         }
     }
