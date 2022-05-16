@@ -9,4 +9,36 @@ techstack:
     - React
     - Gatsby
     - Strapi CMS
+details:
+    - - database
+      - Headless JamStack
+      - Built using Gatsby for React and Strapi CMS
+    - - cpu
+      -
+      - CMS and Database managed through AWS
+    - - github
+      - Automated Workflow
+      - Built and deployed to hosting via GitHub workflows
 ---
+
+### Brolga Digital: Creating a fast, usable experience
+
+### Building The Frontend
+
+### Building The Backend
+
+Going in, a CMS was always part of the plan for Brolga Digital. While not a goal at launch, content marketing via blogs was going to be core to the marketing strategy. This would require a robust CMS with image capabilities and easy editing and change management.
+
+#### Choosing a CMS
+
+Initially, Brolga Digital's backend was built using NetlifyCMS, a git-based option that could be managed entirely via a Gatsby plugin and Github. Part of the appeal was the simplicity and lack of database, and the markdown-based save structure meant that editing was quick and easy.
+
+As the concept for Brolga Digital expanded and a file download section was planned, it became apparent that NetlifyCMS's serverless structure was no longer a viable solution. After researching other headless (and general) CMS options, Strapi CMS was chosen to replace NetlifyCMS.
+
+#### Transitioning to AWS
+
+Strapi CMS using a Postgres database was easy to set up locally, and was able to be pushed for deployment to Heroku via Git using the Heroku command-line functions. This system worked well for a number of months, however several issues conencided to force a change from Heroku to AWS in April of 2022. Images were not saving to the database correctly, despite them uploading to a remote server; a known issue with Heroku and Strapi. In addition to this, Heroku was revoked access to Github following a data breach. These two issues combined made changing server host imperitive.
+
+Amazon's Web Servers (AWS) was chosen as a replacement, it is a common choice throughout the industy and has a proven track record of reliable service. Deploying to AWS was a far more difficult task than simply pushing a repo to Heroku. After setting up all the IAM user credentials, there was still several different systems and services to set up and link for databases, url management and file hosting.
+
+Despite the steep learning curve, having AWS configured correctly for Strapi has greatly improved the content usability for Brolga Digital. The CMS is able to be accessed indepently from the main website on a subdomain, and changes are pushed automatically via webhooks.
