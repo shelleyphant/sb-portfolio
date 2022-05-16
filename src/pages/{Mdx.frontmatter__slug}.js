@@ -4,8 +4,13 @@ import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Skill from '../components/Skill'
+import ProjectInsights from '../components/ProjectInsights'
 
 export default function Template({data}) {
+    const components ={
+        ProjectInsights
+    }
+
     return (
         <>
             <Layout>
@@ -23,7 +28,7 @@ export default function Template({data}) {
                             )
                         }) : ''}
                     </div>
-                    <MDXProvider>
+                    <MDXProvider components={components}>
                       <MDXRenderer>
                         {data.mdx.body}
                       </MDXRenderer>
