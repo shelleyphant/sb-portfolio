@@ -5,6 +5,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Skill from '../components/Skill'
 import ProjectInsights from '../components/ProjectInsights'
+import { Helmet } from 'react-helmet'
 
 export default function Template({data}) {
     const components ={
@@ -13,6 +14,7 @@ export default function Template({data}) {
 
     return (
         <>
+            <Helmet title={data.mdx.frontmatter.title + ' // Shelley Bassett'} />
             <Layout>
                 <div className='content'>
                     <h2>{data.mdx.frontmatter.title}</h2>

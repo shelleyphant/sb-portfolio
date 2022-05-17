@@ -8,11 +8,13 @@ import { graphql } from "gatsby"
 // import {Link} from "gatsby"
 import { FormspreeProvider } from '@formspree/react';
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from 'react-helmet';
 
 
 export default function index({ data }) {
   return (
     <Layout>
+        <Helmet title='Shelley Bassett' />
       <section id="welcome">
         <h2>Welcome</h2>
         <p>Shelley Bassett is a digital designer/developer based in Melbourne, Aus</p>
