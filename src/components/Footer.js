@@ -1,17 +1,60 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import * as Icon  from "react-feather";
+import * as Icon from 'react-feather'
 
 export default function Footer() {
     return (
         <footer className="footer">
-            <Link to="/"><h1>Shelley Bassett</h1></Link>
+            <Link to="/">
+                <h1>Shelley Bassett</h1>
+            </Link>
             <div>
-                <p>This website was built by <Link to="/" className='link'>Shelley Bassett</Link> using <a href="https://www.gatsbyjs.com/" className='link'>Gatsby</a> for <a href="https://reactjs.org/" className='link'>React</a> and <a href="https://sass-lang.com/" className='link'>Sass</a></p>
+                <p>
+                    This website was built by{' '}
+                    <Link to="/" className="link">
+                        Shelley Bassett
+                    </Link>{' '}
+                    using{' '}
+                    <a href="https://www.gatsbyjs.com/" className="link">
+                        Gatsby
+                    </a>{' '}
+                    for{' '}
+                    <a href="https://reactjs.org/" className="link">
+                        React
+                    </a>{' '}
+                    and{' '}
+                    <a href="https://sass-lang.com/" className="link">
+                        Sass
+                    </a>
+                </p>
                 <ul className="social-links">
-                    <li><a href="https://github.com/shelleyphant" title="GitHub" aria-label="GitHub"><Icon.GitHub /></a></li>
-                    <li><a href="https://www.linkedin.com/in/shelley-bassett/" title="LinkedIn" aria-label="LinkedIn"><Icon.Linkedin /></a></li>
-                    <li><a href="https://dribbble.com/shelleybassett" title="Dribbble" aria-label="Dribbble"><Icon.Dribbble /></a></li>
+                    <li>
+                        <a
+                            href="https://github.com/shelleyphant"
+                            title="GitHub"
+                            aria-label="GitHub"
+                        >
+                            <Icon.GitHub />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/shelley-bassett/"
+                            title="LinkedIn"
+                            aria-label="LinkedIn"
+                        >
+                            <Icon.Linkedin />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://dribbble.com/shelleybassett"
+                            title="Dribbble"
+                            aria-label="Dribbble"
+                        >
+                            <Icon.Dribbble />
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -24,7 +67,6 @@ export default function Footer() {
                     <dd>hello@shelleybassett.com</dd>
                 </dl>
             </div>
-            
         </footer>
     )
 }

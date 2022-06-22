@@ -1,7 +1,7 @@
-import React from "react";
-import * as Icon from "react-feather";
-import { Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import React from 'react'
+import * as Icon from 'react-feather'
+import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export default function CaseStudy(props) {
     return (
@@ -21,20 +21,20 @@ export default function CaseStudy(props) {
             <div className="case-study-detail">
                 <ul className="techstack">
                     {props.techstack.map((e) => {
-                        return <li>{e}</li>;
+                        return <li>{e}</li>
                     })}
                 </ul>
                 <Link to={props.link} className="button">
                     Learn More
                 </Link>
                 <ul className="code-links">
-                    {props.git !== "" ? (
+                    {props.git !== '' ? (
                         <li>
                             <a
                                 href={props.git}
                                 title="Veiw Source Code"
                                 aria-label="Source Code"
-                                target={"_blank"}
+                                target={'_blank'}
                                 rel="noopener noreferrer"
                                 className="icon"
                             >
@@ -44,13 +44,13 @@ export default function CaseStudy(props) {
                     ) : (
                         <></>
                     )}
-                    {props.live !== "" ? (
+                    {props.live !== '' ? (
                         <li>
                             <a
                                 href={props.live}
                                 title="View Live Site"
                                 aria-label="Live Project"
-                                target={"_blank"}
+                                target={'_blank'}
                                 rel="noopener noreferrer"
                                 className="icon"
                             >
@@ -63,5 +63,5 @@ export default function CaseStudy(props) {
                 </ul>
             </div>
         </div>
-    );
+    )
 }

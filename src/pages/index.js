@@ -1,14 +1,14 @@
-import React from "react";
-import Layout from "../components/Layout";
-import Skill from "../components/Skill";
-import CaseStudy from "../components/CaseStudy";
-import ContactForm from "../components/ContactForm";
-import { graphql } from "gatsby";
+import React from 'react'
+import Layout from '../components/Layout'
+import Skill from '../components/Skill'
+import CaseStudy from '../components/CaseStudy'
+import ContactForm from '../components/ContactForm'
+import { graphql } from 'gatsby'
 // import * as Icon  from "react-feather";
 // import {Link} from "gatsby"
-import { FormspreeProvider } from "@formspree/react";
-import { StaticImage } from "gatsby-plugin-image";
-import { Helmet } from "react-helmet";
+import { FormspreeProvider } from '@formspree/react'
+import { StaticImage } from 'gatsby-plugin-image'
+import { Helmet } from 'react-helmet'
 
 export default function index({ data }) {
     return (
@@ -50,10 +50,10 @@ export default function index({ data }) {
                     like React.
                 </p>
                 <p>
-                    In 2020, Shelley founded{" "}
+                    In 2020, Shelley founded{' '}
                     <a
                         href="https://www.brolgadigital.com.au"
-                        target={"_blank"}
+                        target={'_blank'}
                         rel="noopener noreferrer"
                     >
                         Brolga Digital
@@ -111,18 +111,18 @@ export default function index({ data }) {
                                 live={
                                     node.frontmatter.site
                                         ? node.frontmatter.site
-                                        : ""
+                                        : ''
                                 }
                                 git={
                                     node.frontmatter.git
                                         ? node.frontmatter.git
-                                        : ""
+                                        : ''
                                 }
                                 link={node.frontmatter.slug}
                                 image={node.frontmatter.thumbnail}
                                 techstack={node.frontmatter.techstack}
                             />
-                        );
+                        )
                     })}
                 </div>
             </section>
@@ -134,7 +134,7 @@ export default function index({ data }) {
                 </FormspreeProvider>
             </section>
         </Layout>
-    );
+    )
 }
 
 export const pageQuery = graphql`
@@ -160,4 +160,4 @@ export const pageQuery = graphql`
             }
         }
     }
-`;
+`

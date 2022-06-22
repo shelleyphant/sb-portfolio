@@ -70,5 +70,5 @@ jobs:
                   username: ${{ secrets.USER }}
                   password: ${{ secrets.PASS }}
                   protocol: ftps
-                  local-dir: "build/"
-                  server-dir: "public_html/shelleybassett.com/"
+                  local-dir: 'build/'
+                  server-dir: 'public_html/shelleybassett.com/'

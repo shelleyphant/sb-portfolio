@@ -1,17 +1,16 @@
 import React from 'react'
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout({ children }) {
     return (
         <div className="layout">
             <Header />
-            
+
             <div className="wrapper">
-                { children }
+                {children}
                 <Footer />
             </div>
         </div>
-        
     )
 }

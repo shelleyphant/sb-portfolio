@@ -1,41 +1,42 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { graphql } from "gatsby"
-import { MDXProvider } from "@mdx-js/react"
+import { graphql } from 'gatsby'
+import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Skill from '../components/Skill'
 import ProjectInsights from '../components/ProjectInsights'
 import { Helmet } from 'react-helmet'
 
-export default function Template({data}) {
-    const components ={
-        ProjectInsights
+export default function Template({ data }) {
+    const components = {
+        ProjectInsights,
     }
 
     return (
         <>
-            <Helmet title={data.mdx.frontmatter.title + ' // Shelley Bassett'} />
+            <Helmet
+                title={data.mdx.frontmatter.title + ' // Shelley Bassett'}
+            />
             <Layout>
-                <div className='content'>
+                <div className="content">
                     <h2>{data.mdx.frontmatter.title}</h2>
-                    <p className='tagline'>{data.mdx.frontmatter.tagline}</p>
-                    <div className='project-detail'>
-                        {data.mdx.frontmatter.details ? data.mdx.frontmatter.details.map((detail) => {
-                            return (
-                                <Skill 
-                                    icon={detail[0]? detail[0]:''}
-                                    heading={detail[1]? detail[1]:''}
-                                    desc={detail[2]? detail[2]:''}
-                                />
-                            )
-                        }) : ''}
+                    <p className="tagline">{data.mdx.frontmatter.tagline}</p>
+                    <div className="project-detail">
+                        {data.mdx.frontmatter.details
+                            ? data.mdx.frontmatter.details.map((detail) => {
+                                  return (
+                                      <Skill
+                                          icon={detail[0] ? detail[0] : ''}
+                                          heading={detail[1] ? detail[1] : ''}
+                                          desc={detail[2] ? detail[2] : ''}
+                                      />
+                                  )
+                              })
+                            : ''}
                     </div>
                     <MDXProvider components={components}>
-                      <MDXRenderer>
-                        {data.mdx.body}
-                      </MDXRenderer>
+                        <MDXRenderer>{data.mdx.body}</MDXRenderer>
                     </MDXProvider>
-
                 </div>
             </Layout>
         </>
@@ -43,15 +44,15 @@ export default function Template({data}) {
 }
 
 export const pageQuery = graphql`
-  query MDXQuery($id: String!) {
-    mdx(id: { eq: $id }) {
-      id
-      frontmatter {
-        title
-        tagline
-        details
-      }
-      body
+    query MDXQuery($id: String!) {
+        mdx(id: { eq: $id }) {
+            id
+            frontmatter {
+                title
+                tagline
+                details
+            }
+            body
+        }
     }
-  }
 `
