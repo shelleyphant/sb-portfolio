@@ -67,13 +67,18 @@ img {
 .layout {
     background-color: #f8f8f8;
     padding-top: 50px;
+    min-height: 100vh;
 
     .wrapper {
         background-color: white;
         width: 85%;
         max-width: 1000px;
+        min-height: calc(100vh - 110px);
         margin: 60px auto 0 auto;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .content {
             border-top: #f8f8f8 solid 2px;
