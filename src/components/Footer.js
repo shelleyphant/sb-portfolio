@@ -63,7 +63,7 @@ export default function Footer() {
             <div className="flex-1">
                 <dl className="m-auto grid grid-cols-[1fr_3fr] gap-y-4 gap-x-2">
                     <dt>Location</dt>
-                    <dd>Windsor, Melbourne</dd>
+                    <dd>Melbourne, AUS</dd>
                     <dt>Phone</dt>
                     <dd>0430 306 207</dd>
                     <dt>Email</dt>
