@@ -4,11 +4,11 @@ import * as Icon from 'react-feather'
 
 export default function Footer() {
     return (
-        <footer className="footer">
-            <Link to="/">
-                <h1>Shelley Bassett</h1>
+        <footer className="footer p-12 flex gap-12 flex-wrap">
+            <Link to="/" className="basis-full">
+                <span className="name">Shelley Bassett</span>
             </Link>
-            <div>
+            <div className="flex-1">
                 <p>
                     This website was built by{' '}
                     <Link to="/" className="link">
@@ -27,12 +27,13 @@ export default function Footer() {
                         Sass
                     </a>
                 </p>
-                <ul className="social-links">
+                <ul className="flex flex-row justify-center gap-8">
                     <li>
                         <a
                             href="https://github.com/shelleyphant"
                             title="GitHub"
                             aria-label="GitHub"
+                            className="opacity-25 hover:opacity-100 focus:opacity-100 focus-visible:opacity-100"
                         >
                             <Icon.GitHub />
                         </a>
@@ -42,6 +43,7 @@ export default function Footer() {
                             href="https://www.linkedin.com/in/shelley-bassett/"
                             title="LinkedIn"
                             aria-label="LinkedIn"
+                            className="opacity-25 hover:opacity-100 focus:opacity-100 focus-visible:opacity-100"
                         >
                             <Icon.Linkedin />
                         </a>
@@ -51,16 +53,17 @@ export default function Footer() {
                             href="https://dribbble.com/shelleybassett"
                             title="Dribbble"
                             aria-label="Dribbble"
+                            className="opacity-25 hover:opacity-100 focus:opacity-100 focus-visible:opacity-100"
                         >
                             <Icon.Dribbble />
                         </a>
                     </li>
                 </ul>
             </div>
-            <div>
-                <dl>
+            <div className="flex-1">
+                <dl className="m-auto grid grid-cols-[1fr_3fr] gap-y-4 gap-x-2">
                     <dt>Location</dt>
-                    <dd>Altona, Melbourne</dd>
+                    <dd>Windsor, Melbourne</dd>
                     <dt>Phone</dt>
                     <dd>0430 306 207</dd>
                     <dt>Email</dt>
