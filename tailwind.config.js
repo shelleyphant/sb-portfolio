@@ -15,6 +15,10 @@ module.exports = {
             white: '#ffffff',
             black: '#000000',
         },
+        fontFamily: {
+            raleway: ['Raleway', 'sans-serif'],
+            roboto: ['Roboto', 'sans-serif'],
+        },
         extend: {},
     },
     plugins: ['gatsby-plugin-postcss'],
