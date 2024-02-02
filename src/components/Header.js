@@ -17,7 +17,7 @@ export default function Header() {
         <div className="left-0 right-0 h-12 fixed top-0 text-white z-50 header">
             <div className="container m-auto flex flex-row justify-between">
                 <Link to="/">
-                    <h1>Shelley Bassett</h1>
+                    <span className="name">Shelley Bassett</span>
                 </Link>
                 <ul className="flex flex-row gap-3 items-center font-raleway font-normal">
                     <li>
