@@ -91,59 +91,142 @@ export default function index({ data }) {
             <section id="expertise">
                 <h2>Expertise</h2>
                 <h3>Languages & Frameworks</h3>
-                <div>
-                    <FontAwesomeIcon icon="fa-brands fa-html5" />
-                    <FontAwesomeIcon icon="fa-brands fa-css3-alt" />
-                    <FontAwesomeIcon icon="fa-brands fa-sass" />
-                    <FontAwesomeIcon icon="fa-brands fa-less" />
-                    <i class="devicon-tailwindcss-plain"></i>
-                    <FontAwesomeIcon icon="fa-brands fa-bootstrap" />
-                    <FontAwesomeIcon icon="fa-brands fa-js" />
-                    <i class="devicon-typescript-plain"></i>
-                    <FontAwesomeIcon icon="fa-brands fa-php" />
-                    <i class="devicon-mysql-plain"></i>
-                    <i class="devicon-graphql-plain"></i>
-                    <FontAwesomeIcon icon="fa-brands fa-react" />
+                <ul className="flex flex-row gap-4">
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-html5" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-css3-alt" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-sass" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-less" />
+                    </li>
+                    <li>
+                        {' '}
+                        <i class="devicon-tailwindcss-plain"></i>
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-bootstrap" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-js" />
+                    </li>
+                    <li>
+                        <i class="devicon-typescript-plain"></i>
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-php" />
+                    </li>
+                    <li>
+                        <i class="devicon-mysql-plain"></i>
+                    </li>
+                    <li>
+                        {' '}
+                        <i class="devicon-graphql-plain"></i>
+                    </li>
+                    <li>
+                        {' '}
+                        <FontAwesomeIcon icon="fa-brands fa-react" />
+                    </li>
 
-                    <i class="devicon-nextjs-original"></i>
+                    <li>
+                        <i class="devicon-nextjs-original"></i>
+                    </li>
 
-                    <i class="devicon-gatsby-plain"></i>
+                    <li>
+                        <i class="devicon-gatsby-plain"></i>
+                    </li>
 
-                    <i class="devicon-laravel-plain"></i>
-                    <i class="devicon-codeigniter-plain"></i>
-                </div>
+                    <li>
+                        <i class="devicon-laravel-plain"></i>
+                    </li>
+                    <li>
+                        {' '}
+                        <i class="devicon-codeigniter-plain"></i>
+                    </li>
+                </ul>
                 <h3>CMS</h3>
-                <div>
-                    <i class="devicon-wordpress-plain"></i>
-                    <i class="devicon-woocommerce-plain"></i>
-                    <p>CS-Cart, Strapi, Contentful, DatoCMS</p>
-                </div>
+                <ul className="flex flex-row gap-4">
+                    <li>
+                        <i class="devicon-wordpress-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-woocommerce-plain"></i>
+                    </li>
+                    <li>
+                        <p>CS-Cart, Strapi, Contentful, DatoCMS</p>
+                    </li>
+                </ul>
                 <h3>Servers</h3>
-                <p>WHM, , </p>
-                <FontAwesomeIcon icon="fa-brands fa-cpanel" />
-                <i class="devicon-apache-plain"></i>
-                <FontAwesomeIcon icon="fa-brands fa-node-js" />
+                <ul className="flex flex-row gap-4">
+                    <li>
+                        <p>WHM, , </p>
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-cpanel" />
+                    </li>
+                    <li>
+                        <i class="devicon-apache-plain"></i>
+                    </li>
+                    <li>
+                        {' '}
+                        <FontAwesomeIcon icon="fa-brands fa-node-js" />
+                    </li>
+                </ul>
                 <h3>Integrations</h3>
-                <div>
-                    <FontAwesomeIcon icon="fa-brands fa-paypal" />
-                    <FontAwesomeIcon icon="fa-brands fa-stripe-s" />
+                <ul className="flex flex-row gap-4">
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-paypal" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-stripe-s" />
+                    </li>
 
-                    <FontAwesomeIcon icon="fa-brands fa-facebook" />
-                    <FontAwesomeIcon icon="fa-brands fa-instagram" />
-                    <FontAwesomeIcon icon="fa-brands fa-twitter" />
-                    <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
-                </div>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-facebook" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-instagram" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
+                    </li>
+                </ul>
                 <h3>Tools</h3>
-                <div>
-                    <i class="devicon-jamstack-original"></i>
-                    <i class="devicon-git-plain"></i>
-                    <i class="devicon-github-original"></i>
-                    <i class="devicon-gitlab-plain"></i>
-                    <i class="devicon-vscode-plain"></i>
-                    <FontAwesomeIcon icon="fa-brands fa-npm" />
-                    <FontAwesomeIcon icon="fa-brands fa-yarn" />
-                    <i class="devicon-composer-line"></i>
-                </div>
+                <ul className="flex flex-row gap-4">
+                    <li>
+                        <i class="devicon-jamstack-original"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-git-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-github-original"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-gitlab-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-vscode-plain"></i>
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon="fa-brands fa-npm" />
+                    </li>
+                    <li>
+                        {' '}
+                        <FontAwesomeIcon icon="fa-brands fa-yarn" />
+                    </li>
+                    <li>
+                        {' '}
+                        <i class="devicon-composer-line"></i>
+                    </li>
+                </ul>
                 <h3>Software & Programs</h3>
             </section>
 
