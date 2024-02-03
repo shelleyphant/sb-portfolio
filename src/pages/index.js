@@ -91,7 +91,7 @@ export default function index({ data }) {
             <section id="expertise">
                 <h2>Expertise</h2>
                 <h3>Languages & Frameworks</h3>
-                <ul className="flex flex-row gap-4">
+                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
                     <li>
                         <FontAwesomeIcon icon="fa-brands fa-html5" />
                     </li>
@@ -112,7 +112,7 @@ export default function index({ data }) {
                         <FontAwesomeIcon icon="fa-brands fa-bootstrap" />
                     </li>
                     <li>
-                        <FontAwesomeIcon icon="fa-brands fa-js" />
+                        <i class="devicon-javascript-plain"></i>
                     </li>
                     <li>
                         <i class="devicon-typescript-plain"></i>
@@ -149,7 +149,7 @@ export default function index({ data }) {
                     </li>
                 </ul>
                 <h3>CMS</h3>
-                <ul className="flex flex-row gap-4">
+                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
                     <li>
                         <i class="devicon-wordpress-plain"></i>
                     </li>
@@ -161,7 +161,7 @@ export default function index({ data }) {
                     </li>
                 </ul>
                 <h3>Servers</h3>
-                <ul className="flex flex-row gap-4">
+                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
                     <li>
                         <p>WHM, , </p>
                     </li>
@@ -175,9 +175,12 @@ export default function index({ data }) {
                         {' '}
                         <FontAwesomeIcon icon="fa-brands fa-node-js" />
                     </li>
+                    <li>
+                        <i class="devicon-heroku-original"></i>
+                    </li>
                 </ul>
                 <h3>Integrations</h3>
-                <ul className="flex flex-row gap-4">
+                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
                     <li>
                         <FontAwesomeIcon icon="fa-brands fa-paypal" />
                     </li>
@@ -199,7 +202,7 @@ export default function index({ data }) {
                     </li>
                 </ul>
                 <h3>Tools</h3>
-                <ul className="flex flex-row gap-4">
+                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
                     <li>
                         <i class="devicon-jamstack-original"></i>
                     </li>
@@ -228,6 +231,23 @@ export default function index({ data }) {
                     </li>
                 </ul>
                 <h3>Software & Programs</h3>
+                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                    <li>
+                        <i class="devicon-figma-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-illustrator-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-photoshop-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-filezilla-plain"></i>
+                    </li>
+                    <li>
+                        <i class="devicon-vscode-plain"></i>
+                    </li>
+                </ul>
             </section>
 
             <section id="work">
