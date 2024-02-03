@@ -21,12 +21,20 @@ export default function Header() {
                 </Link>
                 <ul className="flex flex-row gap-3 items-center font-raleway font-normal">
                     <li>
-                        <AnchorLink to="/#about" title="About">
+                        <AnchorLink
+                            to="/#about"
+                            title="About"
+                            className="hover:text-shadow"
+                        >
                             About
                         </AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink to="/#work" title="Work">
+                        <AnchorLink
+                            to="/#work"
+                            title="Work"
+                            className="hover:text-shadow"
+                        >
                             Work
                         </AnchorLink>
                     </li>
@@ -36,12 +44,17 @@ export default function Header() {
                             target={'_blank'}
                             rel="noopener noreferrer"
                             title="Download PDF Resume"
+                            className="hover:text-shadow"
                         >
                             Resume
                         </a>
                     </li>
                     <li>
-                        <AnchorLink to="/#contact" title="Contact">
+                        <AnchorLink
+                            to="/#contact"
+                            title="Contact"
+                            className="hover:text-shadow"
+                        >
                             Contact
                         </AnchorLink>
                     </li>

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
     content: [
         './src/pages/**/*.{js,jsx,ts,tsx}',
@@ -19,7 +21,21 @@ module.exports = {
             raleway: ['Raleway', 'sans-serif'],
             roboto: ['Roboto', 'sans-serif'],
         },
-        extend: {},
+        extend: {
+            textShadow: { DEFAULT: '1px 0 0 currentColor' },
+        },
     },
-    plugins: ['gatsby-plugin-postcss'],
+    plugins: [
+        'gatsby-plugin-postcss',
+        plugin(function ({ matchUtilities, theme }) {
+            matchUtilities(
+                {
+                    'text-shadow': (value) => ({
+                        textShadow: value,
+                    }),
+                },
+                { values: theme('textShadow') }
+            )
+        }),
+    ],
 }
