@@ -45,9 +45,7 @@ a {
     text-decoration: none;
 }
 p {
-    line-height: 1.4em;
-    font-size: 1em;
-    margin-bottom: 25px;
+    @apply text-base mb-4;
 }
 
 .content {
@@ -208,6 +206,21 @@ section {
 
     &:first-of-type {
         border: 0;
+    }
+}
+
+#expertise {
+    ul {
+        li {
+            @apply opacity-40 hover:opacity-100 focus:opacity-100 focus-visible:opacity-100 relative;
+
+            [role='tooltip'] {
+                @apply absolute hidden bg-light-pink text-xs uppercase font-bold left-[80%] top-[80%] px-2 py-1 z-10 whitespace-nowrap;
+            }
+            &:hover [role='tooltip'] {
+                @apply block;
+            }
+        }
     }
 }
 
