@@ -17,20 +17,20 @@ export default function index({ data }) {
             <Helmet title="Shelley Bassett" />
             <section
                 id="welcome"
-                className="flex flex-row gap-12 justify-center"
+                className="flex flex-col md:flex-row gap-12 justify-center"
             >
                 <div className="flex flex-col justify-center">
-                    <h1 className="h2 !text-left !text-3xl after:!left-0 after:!translate-x-0">
+                    <h1 className="h2 !text-left !text-5xl after:!left-0 after:!translate-x-0">
                         Welcome
                     </h1>
-                    <p>
+                    <p className="text-xl">
                         Shelley Bassett is a digital designer/developer based in
                         Melbourne, Aus
                     </p>
                 </div>
                 <StaticImage
                     src="../images/shelley bassett.jpeg"
-                    className="w-1/3 aspect-square"
+                    className="w-full lg:w-1/3 aspect-square"
                     alt="Portrait of Shelley Bassett"
                 />
             </section>
@@ -39,7 +39,7 @@ export default function index({ data }) {
                 <h2>About Shelley</h2>
                 <StaticImage
                     src="../images/shelley and chester 1.jpeg"
-                    className="float-left w-2/5 mr-8 mb-4"
+                    className="float-left md:w-1/2 w-full lg:w-2/5 mr-8 mb-4"
                     alt="Shelley Bassett and her ginger cat Chester"
                 />
                 <p>
