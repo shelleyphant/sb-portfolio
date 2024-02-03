@@ -24,7 +24,7 @@ export default function Header() {
                         <AnchorLink
                             to="/#about"
                             title="About"
-                            className="hover:text-shadow"
+                            className="hover:text-shadow focus:text-shadow focus-visible:text-shadow"
                         >
                             About
                         </AnchorLink>
@@ -33,7 +33,7 @@ export default function Header() {
                         <AnchorLink
                             to="/#work"
                             title="Work"
-                            className="hover:text-shadow"
+                            className="hover:text-shadow focus:text-shadow focus-visible:text-shadow"
                         >
                             Work
                         </AnchorLink>
@@ -44,7 +44,7 @@ export default function Header() {
                             target={'_blank'}
                             rel="noopener noreferrer"
                             title="Download PDF Resume"
-                            className="hover:text-shadow"
+                            className="hover:text-shadow focus:text-shadow focus-visible:text-shadow"
                         >
                             Resume
                         </a>
@@ -53,7 +53,7 @@ export default function Header() {
                         <AnchorLink
                             to="/#contact"
                             title="Contact"
-                            className="hover:text-shadow"
+                            className="hover:text-shadow focus:text-shadow focus-visible:text-shadow"
                         >
                             Contact
                         </AnchorLink>

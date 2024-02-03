@@ -76,7 +76,7 @@ export default function index({ data }) {
                     >
                         Swim Communications
                     </a>{' '}
-                    and freelances as{' '}
+                    and freelances under{' '}
                     <a
                         href="https://www.brolgadigital.com.au"
                         target={'_blank'}
@@ -90,403 +90,417 @@ export default function index({ data }) {
 
             <section id="expertise">
                 <h2>Expertise</h2>
-                <h3>Languages & Frameworks</h3>
-                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-html5"
-                            aria-describedby="html5-desc"
-                        />
-                        <span role="tooltip" id="html5-desc">
-                            HTML5
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-css3-alt"
-                            aria-describedby="css3-desc"
-                        />
-                        <span role="tooltip" id="css3-desc">
-                            CSS3
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-sass"
-                            aria-describedby="sass-desc"
-                        />
-                        <span role="tooltip" id="sass-desc">
-                            Sass
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-less"
-                            aria-describedby="less-desc"
-                        />
-                        <span role="tooltip" id="less-desc">
-                            Less
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-tailwindcss-plain"
-                            aria-describedby="tailwind-desc"
-                        ></i>
-                        <span role="tooltip" id="tailwind-desc">
-                            TailwindCSS
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-bootstrap"
-                            aria-describedby="bootstrap-desc"
-                        />
-                        <span role="tooltip" id="bootstrap-desc">
-                            Bootstrap
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-javascript-plain"
-                            aria-describedby="javascript-desc"
-                        ></i>
-                        <span role="tooltip" id="javascript-desc">
-                            JavaScript
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-typescript-plain"
-                            aria-describedby="typescript-desc"
-                        ></i>
-                        <span role="tooltip" id="typescript-desc">
-                            Typescript
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-php"
-                            aria-describedby="php-desc"
-                        />
-                        <span role="tooltip" id="php-desc">
-                            PHP
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-mysql-plain"
-                            aria-describedby="mysql-desc"
-                        ></i>
-                        <span role="tooltip" id="mysql-desc">
-                            MySQL
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-graphql-plain"
-                            aria-describedby="graphql-desc"
-                        ></i>
-                        <span role="tooltip" id="graphql-desc">
-                            GraphQL
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-react"
-                            aria-describedby="react-desc"
-                        />
-                        <span role="tooltip" id="react-desc">
-                            React
-                        </span>
-                    </li>
 
-                    <li>
-                        <i
-                            className="devicon-nextjs-original"
-                            aria-describedby="next-desc"
-                        ></i>
-                        <span role="tooltip" id="next-desc">
-                            NextJS
-                        </span>
-                    </li>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3>Languages & Frameworks</h3>
+                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-html5"
+                                    aria-describedby="html5-desc"
+                                />
+                                <span role="tooltip" id="html5-desc">
+                                    HTML5
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-css3-alt"
+                                    aria-describedby="css3-desc"
+                                />
+                                <span role="tooltip" id="css3-desc">
+                                    CSS3
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-sass"
+                                    aria-describedby="sass-desc"
+                                />
+                                <span role="tooltip" id="sass-desc">
+                                    Sass
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-less"
+                                    aria-describedby="less-desc"
+                                />
+                                <span role="tooltip" id="less-desc">
+                                    Less
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-tailwindcss-plain"
+                                    aria-describedby="tailwind-desc"
+                                ></i>
+                                <span role="tooltip" id="tailwind-desc">
+                                    TailwindCSS
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-bootstrap"
+                                    aria-describedby="bootstrap-desc"
+                                />
+                                <span role="tooltip" id="bootstrap-desc">
+                                    Bootstrap
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-javascript-plain"
+                                    aria-describedby="javascript-desc"
+                                ></i>
+                                <span role="tooltip" id="javascript-desc">
+                                    JavaScript
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-typescript-plain"
+                                    aria-describedby="typescript-desc"
+                                ></i>
+                                <span role="tooltip" id="typescript-desc">
+                                    Typescript
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-php"
+                                    aria-describedby="php-desc"
+                                />
+                                <span role="tooltip" id="php-desc">
+                                    PHP
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-mysql-plain"
+                                    aria-describedby="mysql-desc"
+                                ></i>
+                                <span role="tooltip" id="mysql-desc">
+                                    MySQL
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-graphql-plain"
+                                    aria-describedby="graphql-desc"
+                                ></i>
+                                <span role="tooltip" id="graphql-desc">
+                                    GraphQL
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-react"
+                                    aria-describedby="react-desc"
+                                />
+                                <span role="tooltip" id="react-desc">
+                                    React
+                                </span>
+                            </li>
 
-                    <li>
-                        <i
-                            className="devicon-gatsby-plain"
-                            aria-describedby="gatsby-desc"
-                        ></i>
-                        <span role="tooltip" id="gatsby-desc">
-                            Gatsby
-                        </span>
-                    </li>
+                            <li>
+                                <i
+                                    className="devicon-nextjs-original"
+                                    aria-describedby="next-desc"
+                                ></i>
+                                <span role="tooltip" id="next-desc">
+                                    NextJS
+                                </span>
+                            </li>
 
-                    <li>
-                        <i
-                            className="devicon-laravel-plain"
-                            aria-describedby="laravel-desc"
-                        ></i>
-                        <span role="tooltip" id="laravel-desc">
-                            Laravel
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-codeigniter-plain"
-                            aria-describedby="codeigniter-desc"
-                        ></i>
-                        <span role="tooltip" id="codeigniter-desc">
-                            CodeIgniter
-                        </span>
-                    </li>
-                </ul>
-                <h3>CMS</h3>
-                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
-                    <li>
-                        <i
-                            className="devicon-wordpress-plain"
-                            aria-describedby="wordpress-desc"
-                        ></i>
-                        <span role="tooltip" id="wordpress-desc">
-                            WordPress
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-woocommerce-plain"
-                            aria-describedby="woocommerce-desc"
-                        ></i>
-                        <span role="tooltip" id="woocommerce-desc">
-                            WooCommerce
-                        </span>
-                    </li>
-                    <li>
-                        <p>CS-Cart, Strapi, Contentful, DatoCMS</p>
-                    </li>
-                </ul>
-                <h3>Servers</h3>
-                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
-                    <li>
-                        <p>WHM, , </p>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-cpanel"
-                            aria-describedby="cpanel-desc"
-                        />
-                        <span role="tooltip" id="cpanel-desc">
-                            cPanel
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-apache-plain"
-                            aria-describedby="apache-desc"
-                        ></i>
-                        <span role="tooltip" id="apache-desc">
-                            Apache
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-node-js"
-                            aria-describedby="node-desc"
-                        />
-                        <span role="tooltip" id="node-desc">
-                            NodeJS
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-heroku-original"
-                            aria-describedby="heroku-desc"
-                        ></i>
-                        <span role="tooltip" id="heroku-desc">
-                            Heroku
-                        </span>
-                    </li>
-                </ul>
-                <h3>Integrations</h3>
-                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-paypal"
-                            aria-describedby="paypal-desc"
-                        />
-                        <span role="tooltip" id="paypal-desc">
-                            PayPal
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-stripe-s"
-                            aria-describedby="stripe-desc"
-                        />
-                        <span role="tooltip" id="stripe-desc">
-                            Stripe
-                        </span>
-                    </li>
+                            <li>
+                                <i
+                                    className="devicon-gatsby-plain"
+                                    aria-describedby="gatsby-desc"
+                                ></i>
+                                <span role="tooltip" id="gatsby-desc">
+                                    Gatsby
+                                </span>
+                            </li>
 
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-facebook"
-                            aria-describedby="facebook-desc"
-                        />
-                        <span role="tooltip" id="facebook-desc">
-                            Facebook
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-instagram"
-                            aria-describedby="instagram-desc"
-                        />
-                        <span role="tooltip" id="instagram-desc">
-                            Instagram
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-twitter"
-                            aria-describedby="twitter-desc"
-                        />
-                        <span role="tooltip" id="twitter-desc">
-                            Twitter
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-x-twitter"
-                            aria-describedby="x-desc"
-                        />
-                        <span role="tooltip" id="x-desc">
-                            X (Twitter)
-                        </span>
-                    </li>
-                </ul>
-                <h3>Tools</h3>
-                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
-                    <li>
-                        <i
-                            className="devicon-jamstack-original"
-                            aria-describedby="jamstack-desc"
-                        ></i>
-                        <span role="tooltip" id="jamstack-desc">
-                            JamStack
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-git-plain"
-                            aria-describedby="git-desc"
-                        ></i>
-                        <span role="tooltip" id="git-desc">
-                            Git
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-github-original"
-                            aria-describedby="github-desc"
-                        ></i>
-                        <span role="tooltip" id="github-desc">
-                            GitHub
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-gitlab-plain"
-                            aria-describedby="gitlab-desc"
-                        ></i>
-                        <span role="tooltip" id="gitlab-desc">
-                            GitLab
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-vscode-plain"
-                            aria-describedby="vscode-desc"
-                        ></i>
-                        <span role="tooltip" id="vscode-desc">
-                            VS Code
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-npm"
-                            aria-describedby="npm-desc"
-                        />
-                        <span role="tooltip" id="npm-desc">
-                            NPM
-                        </span>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-yarn"
-                            aria-describedby="yarn-desc"
-                        />
-                        <span role="tooltip" id="yarn-desc">
-                            Yarn
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-composer-line"
-                            aria-describedby="composer-desc"
-                        ></i>
-                        <span role="tooltip" id="composer-desc">
-                            Composer
-                        </span>
-                    </li>
-                </ul>
-                <h3>Software & Programs</h3>
-                <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
-                    <li>
-                        <i
-                            className="devicon-figma-plain"
-                            aria-describedby="figma-desc"
-                        ></i>
-                        <span role="tooltip" id="figma-desc">
-                            Figma
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-illustrator-plain"
-                            aria-describedby="illustrator-desc"
-                        ></i>
-                        <span role="tooltip" id="illustrator-desc">
-                            Adobe Illustrator
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-photoshop-plain"
-                            aria-describedby="photoshop-desc"
-                        ></i>
-                        <span role="tooltip" id="photoshop-desc">
-                            Adobe Photoshop
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-filezilla-plain"
-                            aria-describedby="filezilla-desc"
-                        ></i>
-                        <span role="tooltip" id="filezilla-desc">
-                            FileZilla
-                        </span>
-                    </li>
-                    <li>
-                        <i
-                            className="devicon-vscode-plain"
-                            aria-describedby="vscode-desc"
-                        ></i>
-                        <span role="tooltip" id="vscode-desc">
-                            VS Code
-                        </span>
-                    </li>
-                </ul>
+                            <li>
+                                <i
+                                    className="devicon-laravel-plain"
+                                    aria-describedby="laravel-desc"
+                                ></i>
+                                <span role="tooltip" id="laravel-desc">
+                                    Laravel
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-codeigniter-plain"
+                                    aria-describedby="codeigniter-desc"
+                                ></i>
+                                <span role="tooltip" id="codeigniter-desc">
+                                    CodeIgniter
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>CMS</h3>
+                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                            <li>
+                                <i
+                                    className="devicon-wordpress-plain"
+                                    aria-describedby="wordpress-desc"
+                                ></i>
+                                <span role="tooltip" id="wordpress-desc">
+                                    WordPress
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-woocommerce-plain"
+                                    aria-describedby="woocommerce-desc"
+                                ></i>
+                                <span role="tooltip" id="woocommerce-desc">
+                                    WooCommerce
+                                </span>
+                            </li>
+                            <li>
+                                <p>CS-Cart, Strapi, Contentful, DatoCMS</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Servers</h3>
+                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                            <li>
+                                <p>WHM, , </p>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-cpanel"
+                                    aria-describedby="cpanel-desc"
+                                />
+                                <span role="tooltip" id="cpanel-desc">
+                                    cPanel
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-apache-plain"
+                                    aria-describedby="apache-desc"
+                                ></i>
+                                <span role="tooltip" id="apache-desc">
+                                    Apache
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-node-js"
+                                    aria-describedby="node-desc"
+                                />
+                                <span role="tooltip" id="node-desc">
+                                    NodeJS
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-heroku-original"
+                                    aria-describedby="heroku-desc"
+                                ></i>
+                                <span role="tooltip" id="heroku-desc">
+                                    Heroku
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Integrations</h3>
+                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-paypal"
+                                    aria-describedby="paypal-desc"
+                                />
+                                <span role="tooltip" id="paypal-desc">
+                                    PayPal
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-stripe-s"
+                                    aria-describedby="stripe-desc"
+                                />
+                                <span role="tooltip" id="stripe-desc">
+                                    Stripe
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-facebook"
+                                    aria-describedby="facebook-desc"
+                                />
+                                <span role="tooltip" id="facebook-desc">
+                                    Facebook
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-instagram"
+                                    aria-describedby="instagram-desc"
+                                />
+                                <span role="tooltip" id="instagram-desc">
+                                    Instagram
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-twitter"
+                                    aria-describedby="twitter-desc"
+                                />
+                                <span role="tooltip" id="twitter-desc">
+                                    Twitter
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-x-twitter"
+                                    aria-describedby="x-desc"
+                                />
+                                <span role="tooltip" id="x-desc">
+                                    X (Twitter)
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Tools</h3>
+                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                            <li>
+                                <i
+                                    className="devicon-jamstack-original"
+                                    aria-describedby="jamstack-desc"
+                                ></i>
+                                <span role="tooltip" id="jamstack-desc">
+                                    JamStack
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-git-plain"
+                                    aria-describedby="git-desc"
+                                ></i>
+                                <span role="tooltip" id="git-desc">
+                                    Git
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-github-original"
+                                    aria-describedby="github-desc"
+                                ></i>
+                                <span role="tooltip" id="github-desc">
+                                    GitHub
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-gitlab-plain"
+                                    aria-describedby="gitlab-desc"
+                                ></i>
+                                <span role="tooltip" id="gitlab-desc">
+                                    GitLab
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-vscode-plain"
+                                    aria-describedby="vscode-desc"
+                                ></i>
+                                <span role="tooltip" id="vscode-desc">
+                                    VS Code
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-npm"
+                                    aria-describedby="npm-desc"
+                                />
+                                <span role="tooltip" id="npm-desc">
+                                    NPM
+                                </span>
+                            </li>
+                            <li>
+                                <FontAwesomeIcon
+                                    icon="fa-brands fa-yarn"
+                                    aria-describedby="yarn-desc"
+                                />
+                                <span role="tooltip" id="yarn-desc">
+                                    Yarn
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-composer-line"
+                                    aria-describedby="composer-desc"
+                                ></i>
+                                <span role="tooltip" id="composer-desc">
+                                    Composer
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Software & Programs</h3>
+                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                            <li>
+                                <i
+                                    className="devicon-figma-plain"
+                                    aria-describedby="figma-desc"
+                                ></i>
+                                <span role="tooltip" id="figma-desc">
+                                    Figma
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-illustrator-plain"
+                                    aria-describedby="illustrator-desc"
+                                ></i>
+                                <span role="tooltip" id="illustrator-desc">
+                                    Adobe Illustrator
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-photoshop-plain"
+                                    aria-describedby="photoshop-desc"
+                                ></i>
+                                <span role="tooltip" id="photoshop-desc">
+                                    Adobe Photoshop
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-filezilla-plain"
+                                    aria-describedby="filezilla-desc"
+                                ></i>
+                                <span role="tooltip" id="filezilla-desc">
+                                    FileZilla
+                                </span>
+                            </li>
+                            <li>
+                                <i
+                                    className="devicon-vscode-plain"
+                                    aria-describedby="vscode-desc"
+                                ></i>
+                                <span role="tooltip" id="vscode-desc">
+                                    VS Code
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             <section id="work">
