@@ -1,28 +1,36 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Skill from '../components/Skill'
 import CaseStudy from '../components/CaseStudy'
 import ContactForm from '../components/ContactForm'
 import { graphql } from 'gatsby'
-// import * as Icon  from "react-feather";
-// import {Link} from "gatsby"
 import { FormspreeProvider } from '@formspree/react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Helmet } from 'react-helmet'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 export default function index({ data }) {
+    library.add(fab)
     return (
         <Layout>
             <Helmet title="Shelley Bassett" />
-            <section id="welcome">
-                <h2>Welcome</h2>
-                <p>
-                    Shelley Bassett is a digital designer/developer based in
-                    Melbourne, Aus
-                </p>
+            <section
+                id="welcome"
+                className="flex flex-row gap-12 justify-center"
+            >
+                <div className="flex flex-col justify-center">
+                    <h1 className="h2 !text-left !text-3xl after:!left-0 after:!translate-x-0">
+                        Welcome
+                    </h1>
+                    <p>
+                        Shelley Bassett is a digital designer/developer based in
+                        Melbourne, Aus
+                    </p>
+                </div>
                 <StaticImage
                     src="../images/shelley bassett.jpeg"
-                    className="portrait"
+                    className="w-1/3 aspect-square"
                     alt="Portrait of Shelley Bassett"
                 />
             </section>
@@ -31,26 +39,44 @@ export default function index({ data }) {
                 <h2>About Shelley</h2>
                 <StaticImage
                     src="../images/shelley and chester 1.jpeg"
-                    className="candid1"
+                    className="float-left w-2/5 mr-8"
                     alt="Shelley Bassett and her ginger cat Chester"
                 />
                 <p>
-                    Shelley Bassett is a digital designer based in Melbourne,
-                    Australia. She specialises in full-stack websites and
-                    applications, and likes to experiment with branding and
-                    typography. She can often be found with her pets, and spends
-                    her free time illustrating and designing.
+                    Shelley is a strategic and results-driven Technical Studio
+                    Lead, with experience leading high-performance development
+                    teams. She studied digital design with a focus on UI/UX and
+                    accessibility, and now brings her careful eye into
+                    development and management roles. Based in Melbourne,
+                    Australia, she has recently discovered a new enjoyment in
+                    traveling to work overseas.
                 </p>
                 <p>
-                    Shelley likes to design her projects to be fast, responsive
-                    and perform well on new and old machines while still being
-                    accessible to users and search engines. She has extensive
-                    experience with Wordpress, and is currently exploring the
-                    world of flat and headless CMS's, in addition to libraries
-                    like React.
+                    She is proficient in leveraging PHP, JavaScript, other
+                    modern languages, and associated frameworks to architect,
+                    develop, and optimise robust web applications. With a proven
+                    track record of successfully delivering complex projects
+                    within scope, on time, and within budget; she can not only
+                    manage client expectations, but exceed them.
                 </p>
                 <p>
-                    In 2020, Shelley founded{' '}
+                    She specialises in full-stack websites and applications;
+                    implementing best practices, code standards, accessibility
+                    requirements and performance optimisation techniques to
+                    ensure scalable and maintainable projects. Within the
+                    agency, she is recognised for strong problem-solving skills
+                    and the ability to train, motivate, and coach team members.
+                </p>
+                <p>
+                    Currently, Shelley is Studio Lead at{' '}
+                    <a
+                        href="https://www.swim.com.au"
+                        target={'_blank'}
+                        rel="noopener noreferrer"
+                    >
+                        Swim Communications
+                    </a>{' '}
+                    and freelances as{' '}
                     <a
                         href="https://www.brolgadigital.com.au"
                         target={'_blank'}
@@ -58,45 +84,67 @@ export default function index({ data }) {
                     >
                         Brolga Digital
                     </a>
-                    , a small agency using her freelance contacts to build
-                    better experiences for her clients.
+                    .
                 </p>
             </section>
 
             <section id="expertise">
                 <h2>Expertise</h2>
+                <h3>Languages & Frameworks</h3>
                 <div>
-                    <Skill
-                        icon="monitor"
-                        heading="Responsive Designs"
-                        desc="Web apps that are fully responsive and usable across multiple screens, from mobile to 4K"
-                    />
-                    <Skill
-                        icon="users"
-                        heading="User Centric"
-                        desc="Designs that cater to all user types, and use A11y practices to make a better experience for everyone"
-                    />
-                    <Skill
-                        icon="zap"
-                        heading="Interactive"
-                        desc="Animations, storytelling and sounds create immersive and captivating experiences"
-                    />
-                    <Skill
-                        icon="award"
-                        heading="Cutting Edge"
-                        desc="Projects evolve with technology stacks, using the latest and greatest"
-                    />
-                    <Skill
-                        icon="activity"
-                        heading="Data-Driven"
-                        desc="How users interact with elements determines the adjustments that need to be made"
-                    />
-                    <Skill
-                        icon="search"
-                        heading="SEO Focused"
-                        desc="Ensuring that search engines can crawl pages, making them findable by anyone"
-                    />
+                    <FontAwesomeIcon icon="fa-brands fa-html5" />
+                    <FontAwesomeIcon icon="fa-brands fa-css3-alt" />
+                    <FontAwesomeIcon icon="fa-brands fa-sass" />
+                    <FontAwesomeIcon icon="fa-brands fa-less" />
+                    <i class="devicon-tailwindcss-plain"></i>
+                    <FontAwesomeIcon icon="fa-brands fa-bootstrap" />
+                    <FontAwesomeIcon icon="fa-brands fa-js" />
+                    <i class="devicon-typescript-plain"></i>
+                    <FontAwesomeIcon icon="fa-brands fa-php" />
+                    <i class="devicon-mysql-plain"></i>
+                    <i class="devicon-graphql-plain"></i>
+                    <FontAwesomeIcon icon="fa-brands fa-react" />
+
+                    <i class="devicon-nextjs-original"></i>
+
+                    <i class="devicon-gatsby-plain"></i>
+
+                    <i class="devicon-laravel-plain"></i>
+                    <i class="devicon-codeigniter-plain"></i>
                 </div>
+                <h3>CMS</h3>
+                <div>
+                    <i class="devicon-wordpress-plain"></i>
+                    <i class="devicon-woocommerce-plain"></i>
+                    <p>CS-Cart, Strapi, Contentful, DatoCMS</p>
+                </div>
+                <h3>Servers</h3>
+                <p>WHM, , </p>
+                <FontAwesomeIcon icon="fa-brands fa-cpanel" />
+                <i class="devicon-apache-plain"></i>
+                <FontAwesomeIcon icon="fa-brands fa-node-js" />
+                <h3>Integrations</h3>
+                <div>
+                    <FontAwesomeIcon icon="fa-brands fa-paypal" />
+                    <FontAwesomeIcon icon="fa-brands fa-stripe-s" />
+
+                    <FontAwesomeIcon icon="fa-brands fa-facebook" />
+                    <FontAwesomeIcon icon="fa-brands fa-instagram" />
+                    <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                    <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
+                </div>
+                <h3>Tools</h3>
+                <div>
+                    <i class="devicon-jamstack-original"></i>
+                    <i class="devicon-git-plain"></i>
+                    <i class="devicon-github-original"></i>
+                    <i class="devicon-gitlab-plain"></i>
+                    <i class="devicon-vscode-plain"></i>
+                    <FontAwesomeIcon icon="fa-brands fa-npm" />
+                    <FontAwesomeIcon icon="fa-brands fa-yarn" />
+                    <i class="devicon-composer-line"></i>
+                </div>
+                <h3>Software & Programs</h3>
             </section>
 
             <section id="work">
