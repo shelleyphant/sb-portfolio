@@ -2,7 +2,9 @@ const path = require('path')
 
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions
-    const yourTemplate = require.resolve('src/pages/{Mdx.frontmatter__slug}.js')
+    const yourTemplate = require.resolve(
+        './src/pages/{Mdx.frontmatter__slug}.js'
+    )
 
     return graphql(`
         {
