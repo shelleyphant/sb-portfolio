@@ -34,6 +34,7 @@ export default function Template({ data, children }) {
                             : ''}
                     </div>
                     <MDXProvider components={components}>
+                        {/* <MDXRenderer>{data.mdx.body}</MDXRenderer> */}
                         {children}
                     </MDXProvider>
                 </div>
@@ -51,7 +52,7 @@ export const pageQuery = graphql`
                 tagline
                 details
             }
-            body
+            # body
         }
     }
 `

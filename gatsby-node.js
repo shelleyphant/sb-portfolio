@@ -2,9 +2,7 @@ const path = require('path')
 
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions
-    const yourTemplate = require.resolve(
-        './src/pages/{Mdx.frontmatter__slug}.js'
-    )
+    const projectTemplate = path.resolve('src/pages/{Mdx.frontmatter__slug}.js')
 
     return graphql(`
         {
@@ -16,6 +14,7 @@ exports.createPages = ({ actions, graphql }) => {
                             title
                             tagline
                             details
+                            slug
                         }
                         body
                     }
@@ -29,10 +28,10 @@ exports.createPages = ({ actions, graphql }) => {
 
         result.data.allMdx.edges.forEach(({ node }) => {
             createPage({
-                path: node.frontmatter.path,
-                component: `${yourTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
+                path: node.frontmatter.slug,
+                component: projectTemplate,
                 context: {
-                    path: node.frontmatter.path,
+                    id: node.id,
                 },
             })
         })
