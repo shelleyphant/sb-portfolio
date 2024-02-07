@@ -91,7 +91,7 @@ export default function index({ data }) {
             <section id="expertise">
                 <h2>Expertise</h2>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-12">
                     <div>
                         <h3>Languages & Frameworks</h3>
                         <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
@@ -506,11 +506,11 @@ export default function index({ data }) {
             <section id="work">
                 <h2>Selected Work</h2>
 
-                <div className="case-studies">
-                    {data.allMdx.edges.map(({ node, index }) => {
+                <div className="case-studies grid xl:grid-cols-3 gap-12 md:grid-cols-2 grid-cols-1">
+                    {data.allMdx.edges.map(({ node }) => {
                         return (
                             <CaseStudy
-                                key={index}
+                                key={node.id}
                                 heading={node.frontmatter.title}
                                 tagline={node.frontmatter.tagline}
                                 live={

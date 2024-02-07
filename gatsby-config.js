@@ -54,7 +54,6 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-page-creator',
             options: {
-                name: 'projects',
                 path: `${__dirname}/src/projects`,
             },
         },
@@ -62,6 +61,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-mdx`,
             options: {
+                extensions: [`.mdx`, `.md`],
                 gatsbyRemarkPlugins: [
                     {
                         resolve: `gatsby-remark-images`,

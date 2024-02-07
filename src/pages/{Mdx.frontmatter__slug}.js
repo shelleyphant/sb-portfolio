@@ -2,12 +2,11 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Skill from '../components/Skill'
 import ProjectInsights from '../components/ProjectInsights'
 import { Helmet } from 'react-helmet'
 
-export default function Template({ data }) {
+export default function Template({ data, children }) {
     const components = {
         ProjectInsights,
     }
@@ -35,7 +34,7 @@ export default function Template({ data }) {
                             : ''}
                     </div>
                     <MDXProvider components={components}>
-                        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+                        {children}
                     </MDXProvider>
                 </div>
             </Layout>

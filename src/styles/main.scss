@@ -251,15 +251,8 @@ section {
     overflow: auto;
 
     .case-studies {
-        display: flex;
-        flex-direction: row;
-        align-content: stretch;
-        align-items: stretch;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
         .case-study-wrapper {
-            width: 48%;
+            width: 100%;
             margin-bottom: 4%;
             display: flex;
             flex-direction: column;
@@ -434,33 +427,8 @@ form {
     @apply outline-2 outline-green;
 }
 
-@media (max-width: 750px) {
-    .footer {
-        div {
-            width: 100%;
-            margin: 10px 0;
-        }
-    }
-}
-
 @media (max-width: 600px) {
-    #work {
-        .case-studies {
-            .case-study-wrapper {
-                width: 90%;
-                margin: 8% 5% 0 5%;
-
-                &:nth-child(2n) {
-                    margin-left: 5%;
-                }
-            }
-        }
-    }
-
     form {
         width: 100%;
     }
-}
-
-@media (max-width: 550px) {
 }
