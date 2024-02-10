@@ -17,7 +17,7 @@ export default function index({ data }) {
             <Helmet title="Shelley Bassett" />
             <section
                 id="welcome"
-                className="flex flex-col md:flex-row gap-12 justify-center"
+                className="flex flex-col justify-center gap-12 md:flex-row"
             >
                 <div className="flex flex-col justify-center">
                     <h1 className="h2 !text-left !text-5xl after:!left-0 after:!translate-x-0">
@@ -39,7 +39,7 @@ export default function index({ data }) {
                 <h2>About Shelley</h2>
                 <StaticImage
                     src="../images/shelley and chester 1.jpeg"
-                    className="float-left md:w-1/2 w-full lg:w-2/5 mr-8 mb-4"
+                    className="float-left w-full mb-4 mr-8 md:w-1/2 lg:w-2/5"
                     alt="Shelley Bassett and her ginger cat Chester"
                 />
                 <p>
@@ -88,13 +88,13 @@ export default function index({ data }) {
                 </p>
             </section>
 
-            <section id="expertise">
+            <section id="expertise" className="w-full m-auto md:w-2/3">
                 <h2>Expertise</h2>
 
-                <div className="grid md:grid-cols-2 gap-12">
+                <div className="grid gap-12 md:grid-cols-2">
                     <div>
                         <h3>Languages & Frameworks</h3>
-                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                        <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
                             <li>
                                 <FontAwesomeIcon
                                     icon="fa-brands fa-html5"
@@ -246,7 +246,7 @@ export default function index({ data }) {
                     </div>
                     <div>
                         <h3>CMS</h3>
-                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                        <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
                             <li>
                                 <i
                                     className="devicon-wordpress-plain"
@@ -272,7 +272,7 @@ export default function index({ data }) {
                     </div>
                     <div>
                         <h3>Servers</h3>
-                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                        <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
                             <li>
                                 <p>WHM, , </p>
                             </li>
@@ -316,7 +316,7 @@ export default function index({ data }) {
                     </div>
                     <div>
                         <h3>Integrations</h3>
-                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                        <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
                             <li>
                                 <FontAwesomeIcon
                                     icon="fa-brands fa-paypal"
@@ -375,7 +375,7 @@ export default function index({ data }) {
                     </div>
                     <div>
                         <h3>Tools</h3>
-                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                        <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
                             <li>
                                 <i
                                     className="devicon-jamstack-original"
@@ -452,7 +452,7 @@ export default function index({ data }) {
                     </div>
                     <div>
                         <h3>Software & Programs</h3>
-                        <ul className="flex flex-row gap-4 mb-6 text-3xl flex-wrap">
+                        <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
                             <li>
                                 <i
                                     className="devicon-figma-plain"
@@ -506,7 +506,7 @@ export default function index({ data }) {
             <section id="work">
                 <h2>Selected Work</h2>
 
-                <div className="case-studies grid xl:grid-cols-3 gap-12 md:grid-cols-2 grid-cols-1">
+                <div className="grid grid-cols-1 gap-12 case-studies xl:grid-cols-3 md:grid-cols-2">
                     {data.allMdx.edges.map(({ node }) => {
                         return (
                             <CaseStudy
