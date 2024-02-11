@@ -604,8 +604,7 @@ export const pageQuery = graphql`
                         title
                         tagline
                         slug
-                        site
-                        git
+
                         techstack
                         thumbnail {
                             childImageSharp {
