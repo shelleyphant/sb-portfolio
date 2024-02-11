@@ -19,7 +19,11 @@ export default function Template({ data, children }) {
             <Layout>
                 <div className="content">
                     <h2>{data.mdx.frontmatter.title}</h2>
-                    <p className="tagline">{data.mdx.frontmatter.tagline}</p>
+                    <ul className="flex flex-row justify-center gap-3 mb-4 -mt-6 text-xs opacity-60">
+                        {data.mdx.frontmatter.techstack.map((e) => {
+                            return <li>{e}</li>
+                        })}
+                    </ul>
                     <div className="project-detail">
                         {data.mdx.frontmatter.details
                             ? data.mdx.frontmatter.details.map((detail) => {
@@ -34,7 +38,6 @@ export default function Template({ data, children }) {
                             : ''}
                     </div>
                     <MDXProvider components={components}>
-                        {/* <MDXRenderer>{data.mdx.body}</MDXRenderer> */}
                         {children}
                     </MDXProvider>
                 </div>
@@ -51,6 +54,7 @@ export const pageQuery = graphql`
                 title
                 tagline
                 details
+                techstack
             }
             # body
         }

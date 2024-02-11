@@ -17,9 +17,8 @@ export default function CaseStudy(props) {
             <div className="case-study-detail">
                 <div>
                     <h3>{props.heading}</h3>
-                    <p>{props.tagline}</p>
                 </div>
-                <ul className="techstack">
+                <ul className="flex flex-row gap-3 mb-4 text-xs opacity-60">
                     {props.techstack.map((e) => {
                         return <li>{e}</li>
                     })}
