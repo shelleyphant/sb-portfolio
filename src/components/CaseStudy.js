@@ -5,29 +5,30 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export default function CaseStudy(props) {
     return (
-        <div className="case-study-wrapper">
+        <Link to={props.link} className="case-study-wrapper">
             <div className="case-study-header">
-                <div className="case-study-title">
-                    <h3>{props.heading}</h3>
-                    <p>{props.tagline}</p>
-                </div>
-
                 <GatsbyImage
                     image={getImage(props.image)}
                     className="case-study-image"
                     alt=""
                 />
             </div>
+
             <div className="case-study-detail">
+                <div>
+                    <h3>{props.heading}</h3>
+                    <p>{props.tagline}</p>
+                </div>
                 <ul className="techstack">
                     {props.techstack.map((e) => {
                         return <li>{e}</li>
                     })}
                 </ul>
-                <Link to={props.link} className="button">
-                    Learn More
-                </Link>
-                <ul className="code-links">
+
+                <ul className="flex flex-row items-center gap-3 code-links">
+                    <li>
+                        <p className="button">Learn More</p>
+                    </li>
                     {props.git !== '' ? (
                         <li>
                             <a
@@ -62,6 +63,6 @@ export default function CaseStudy(props) {
                     )}
                 </ul>
             </div>
-        </div>
+        </Link>
     )
 }

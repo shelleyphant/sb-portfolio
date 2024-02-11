@@ -10,6 +10,13 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
+import contentful from '../../static/images/logos/contentful.svg'
+import CSCart from '../../static/images/logos/cs-cart.svg'
+import dato from '../../static/images/logos/dato.svg'
+import strapi from '../../static/images/logos/strapi.svg'
+import cpanel from '../../static/images/logos/cpanel.svg'
+import whm from '../../static/images/logos/whm.svg'
+
 export default function index({ data }) {
     library.add(fab)
     return (
@@ -266,7 +273,44 @@ export default function index({ data }) {
                                 </span>
                             </li>
                             <li>
-                                <p>CS-Cart, Strapi, Contentful, DatoCMS</p>
+                                <img
+                                    src={CSCart}
+                                    alt="CS-Cart Logo"
+                                    aria-describedby="cs-cart-desc"
+                                />
+                                <span role="tooltip" id="cs-cart-desc">
+                                    CS-Cart
+                                </span>
+                            </li>
+                            <li>
+                                <img
+                                    src={strapi}
+                                    alt="Strapi Logo"
+                                    aria-describedby="strapi-desc"
+                                />
+                                <span role="tooltip" id="strapi-desc">
+                                    Strapi
+                                </span>
+                            </li>
+                            <li>
+                                <img
+                                    src={dato}
+                                    alt="DatoCMS Logo"
+                                    aria-describedby="dato-desc"
+                                />
+                                <span role="tooltip" id="dato-desc">
+                                    DatoCMS
+                                </span>
+                            </li>
+                            <li>
+                                <img
+                                    src={contentful}
+                                    alt="Contentful Logo"
+                                    aria-describedby="contentful-desc"
+                                />
+                                <span role="tooltip" id="constentful-desc">
+                                    Contentful
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -274,11 +318,19 @@ export default function index({ data }) {
                         <h3>Servers</h3>
                         <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
                             <li>
-                                <p>WHM, , </p>
+                                <img
+                                    src={whm}
+                                    alt="WHM Logo"
+                                    aria-describedby="whm-desc"
+                                />
+                                <span role="tooltip" id="whm-desc">
+                                    WHM
+                                </span>
                             </li>
                             <li>
-                                <FontAwesomeIcon
-                                    icon="fa-brands fa-cpanel"
+                                <img
+                                    src={cpanel}
+                                    alt="cPanel Logo"
                                     aria-describedby="cpanel-desc"
                                 />
                                 <span role="tooltip" id="cpanel-desc">
