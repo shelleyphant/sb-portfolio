@@ -4,30 +4,34 @@ import * as Icon from 'react-feather'
 
 export default function Footer() {
     return (
-        <footer className="footer p-12 flex gap-12 flex-wrap">
-            <Link to="/" className="basis-full">
-                <span className="name">Shelley Bassett</span>
-            </Link>
+        <footer className="flex flex-wrap gap-12 p-12 footer">
+            <div className="basis-full">
+                <Link to="/">
+                    <span className="name">Shelley Bassett</span>
+                </Link>
+            </div>
             <div className="flex-1">
                 <p>
                     This website was built by{' '}
-                    <Link to="/" className="link">
-                        Shelley Bassett
-                    </Link>{' '}
-                    using{' '}
-                    <a href="https://www.gatsbyjs.com/" className="link">
-                        Gatsby
-                    </a>{' '}
-                    for{' '}
-                    <a href="https://reactjs.org/" className="link">
-                        React
+                    <Link to="/">Shelley Bassett</Link> using{' '}
+                    <a
+                        href="https://tailwindcss.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        TailwindCSS
                     </a>{' '}
                     and{' '}
-                    <a href="https://sass-lang.com/" className="link">
-                        Sass
+                    <a
+                        href="https://www.gatsbyjs.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Gatsby
                     </a>
+                    .
                 </p>
-                <ul className="flex flex-row justify-center gap-8">
+                <ul className="flex flex-row gap-8 mt-8">
                     <li>
                         <a
                             href="https://github.com/shelleyphant"

@@ -95,10 +95,10 @@ export default function index({ data }) {
                 </p>
             </section>
 
-            <section id="expertise" className="w-full m-auto md:w-2/3">
+            <section id="expertise" className="content">
                 <h2>Expertise</h2>
 
-                <div className="grid gap-12 md:grid-cols-2">
+                <div className="grid w-full gap-12 m-auto md:grid-cols-2 xl:w-2/3">
                     <div>
                         <h3>Languages & Frameworks</h3>
                         <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
