@@ -18,7 +18,7 @@ export default function Template({ data, children }) {
             />
             <Layout>
                 <div className="content">
-                    <h2>{data.mdx.frontmatter.title}</h2>
+                    <h1 className="heading">{data.mdx.frontmatter.title}</h1>
                     <ul className="flex flex-row justify-center gap-3 mb-4 -mt-6 text-xs opacity-60">
                         {data.mdx.frontmatter.techstack.map((e) => {
                             return <li>{e}</li>
@@ -56,7 +56,7 @@ export const pageQuery = graphql`
                 details
                 techstack
             }
-            # body
+            body
         }
     }
 `

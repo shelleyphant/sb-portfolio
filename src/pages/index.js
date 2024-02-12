@@ -30,7 +30,7 @@ export default function index({ data }) {
                 className="flex flex-col justify-center gap-12 md:flex-row"
             >
                 <div className="flex flex-col justify-center">
-                    <h1 className="h2 !text-left !text-5xl after:!left-0 after:!translate-x-0">
+                    <h1 className="heading !text-left !text-5xl after:!left-0 after:!translate-x-0">
                         Welcome
                     </h1>
                     <p className="text-xl">
@@ -46,7 +46,7 @@ export default function index({ data }) {
             </section>
 
             <section id="about" className="content">
-                <h2>About Shelley</h2>
+                <h2 className="heading">About Shelley</h2>
                 <StaticImage
                     src="../images/shelley and chester 1.jpeg"
                     className="float-left w-full mb-4 mr-8 md:w-1/2 lg:w-2/5"
@@ -99,7 +99,7 @@ export default function index({ data }) {
             </section>
 
             <section id="expertise" className="content">
-                <h2>Expertise</h2>
+                <h2 className="heading">Expertise</h2>
 
                 <div className="grid w-full gap-12 m-auto md:grid-cols-2 lg:w-2/3">
                     <div>
@@ -589,7 +589,7 @@ export default function index({ data }) {
             </section>
 
             <section id="work">
-                <h2>Selected Work</h2>
+                <h2 className="heading">Selected Work</h2>
 
                 <div className="grid grid-cols-1 gap-12 case-studies xl:grid-cols-3 md:grid-cols-2">
                     {data.allMdx.edges.map(({ node }) => {
@@ -618,7 +618,7 @@ export default function index({ data }) {
             </section>
 
             <section id="contact">
-                <h2>Get in Contact</h2>
+                <h2 className="heading">Get in Contact</h2>
                 <FormspreeProvider project="1710348955751022432">
                     <ContactForm />
                 </FormspreeProvider>

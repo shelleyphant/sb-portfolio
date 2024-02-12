@@ -9,9 +9,7 @@ html {
 
     text-shadow: 0.1rem 0.1rem #fac6c2;
 }
-
-h2,
-.h2 {
+.heading {
     @apply font-raleway text-center relative mb-12 text-2xl font-medium;
 
     &::after {
@@ -19,6 +17,9 @@ h2,
         background: linear-gradient(135deg, #62b1a2 0%, #a7c9de 100%);
         @apply w-[200px] h-[2px] absolute bottom-[-10px] left-1/2 -translate-x-1/2;
     }
+}
+h2,
+.h2 {
 }
 h3 {
     @apply font-normal mb-3;
