@@ -597,7 +597,6 @@ export default function index({ data }) {
                             <CaseStudy
                                 key={node.id}
                                 heading={node.frontmatter.title}
-                                tagline={node.frontmatter.tagline}
                                 live={
                                     node.frontmatter.site
                                         ? node.frontmatter.site
@@ -635,9 +634,7 @@ export const pageQuery = graphql`
                     id
                     frontmatter {
                         title
-                        tagline
                         slug
-
                         techstack
                         thumbnail {
                             childImageSharp {

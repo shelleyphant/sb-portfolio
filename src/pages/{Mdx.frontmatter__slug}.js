@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/react'
-import Skill from '../components/Skill'
 import ProjectInsights from '../components/ProjectInsights'
 import { Helmet } from 'react-helmet'
 
@@ -24,19 +23,7 @@ export default function Template({ data, children }) {
                             return <li>{e}</li>
                         })}
                     </ul>
-                    <div className="project-detail">
-                        {data.mdx.frontmatter.details
-                            ? data.mdx.frontmatter.details.map((detail) => {
-                                  return (
-                                      <Skill
-                                          icon={detail[0] ? detail[0] : ''}
-                                          heading={detail[1] ? detail[1] : ''}
-                                          desc={detail[2] ? detail[2] : ''}
-                                      />
-                                  )
-                              })
-                            : ''}
-                    </div>
+
                     <MDXProvider components={components}>
                         {children}
                     </MDXProvider>
@@ -52,8 +39,6 @@ export const pageQuery = graphql`
             id
             frontmatter {
                 title
-                tagline
-                details
                 techstack
             }
             body
