@@ -18,8 +18,8 @@ html {
         @apply w-[200px] h-[2px] absolute bottom-[-10px] left-1/2 -translate-x-1/2;
     }
 }
-h2,
-.h2 {
+h2 {
+    @apply font-normal mb-3 text-xl;
 }
 h3 {
     @apply font-normal mb-3;
