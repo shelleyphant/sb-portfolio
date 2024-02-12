@@ -16,6 +16,9 @@ import dato from '../../static/images/logos/dato.svg'
 import strapi from '../../static/images/logos/strapi.svg'
 import cpanel from '../../static/images/logos/cpanel.svg'
 import whm from '../../static/images/logos/whm.svg'
+import roots from '../../static/images/logos/roots.svg'
+import bedrock from '../../static/images/logos/bedrock.svg'
+import sage from '../../static/images/logos/sage.svg'
 
 export default function index({ data }) {
     library.add(fab)
@@ -98,7 +101,7 @@ export default function index({ data }) {
             <section id="expertise" className="content">
                 <h2>Expertise</h2>
 
-                <div className="grid w-full gap-12 m-auto md:grid-cols-2 xl:w-2/3">
+                <div className="grid w-full gap-12 m-auto md:grid-cols-2 lg:w-2/3">
                     <div>
                         <h3>Languages & Frameworks</h3>
                         <ul className="flex flex-row flex-wrap gap-4 mb-6 text-3xl">
@@ -247,6 +250,36 @@ export default function index({ data }) {
                                 ></i>
                                 <span role="tooltip" id="codeigniter-desc">
                                     CodeIgniter
+                                </span>
+                            </li>
+                            <li>
+                                <img
+                                    src={sage}
+                                    alt="Sage Logo"
+                                    aria-describedby="sage-desc"
+                                />
+                                <span role="tooltip" id="sage-desc">
+                                    Sage
+                                </span>
+                            </li>
+                            <li>
+                                <img
+                                    src={roots}
+                                    alt="Roots.io Logo"
+                                    aria-describedby="roots-desc"
+                                />
+                                <span role="tooltip" id="roots-desc">
+                                    Roots.IO
+                                </span>
+                            </li>
+                            <li>
+                                <img
+                                    src={bedrock}
+                                    alt="Bedrock Logo"
+                                    aria-describedby="bedrock-desc"
+                                />
+                                <span role="tooltip" id="bedrock-desc">
+                                    Bedrock
                                 </span>
                             </li>
                         </ul>
