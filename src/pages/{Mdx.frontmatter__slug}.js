@@ -19,8 +19,8 @@ export default function Template({ data, children }) {
                 <div className="content">
                     <h1 className="heading">{data.mdx.frontmatter.title}</h1>
                     <ul className="flex flex-row justify-center gap-3 mb-4 -mt-6 text-xs opacity-60">
-                        {data.mdx.frontmatter.techstack.map((e) => {
-                            return <li>{e}</li>
+                        {data.mdx.frontmatter.techstack.map((item, index) => {
+                            return <li key={index}>{item}</li>
                         })}
                     </ul>
 

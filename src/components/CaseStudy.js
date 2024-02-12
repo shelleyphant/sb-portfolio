@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export default function CaseStudy(props) {
     return (
-        <Link to={props.link} className="case-study-wrapper">
+        <Link to={props.link} className="case-study-wrapper" key={props.id}>
             <div className="case-study-header">
                 <GatsbyImage
                     image={getImage(props.image)}

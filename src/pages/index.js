@@ -595,7 +595,7 @@ export default function index({ data }) {
                     {data.allMdx.edges.map(({ node }) => {
                         return (
                             <CaseStudy
-                                key={node.id}
+                                id={node.id}
                                 heading={node.frontmatter.title}
                                 live={
                                     node.frontmatter.site
