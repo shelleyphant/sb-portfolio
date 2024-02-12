@@ -73,9 +73,11 @@ export default function index({ data }) {
                     She specialises in full-stack websites and applications;
                     implementing best practices, code standards, accessibility
                     requirements and performance optimisation techniques to
-                    ensure scalable and maintainable projects. Within the
-                    agency, she is recognised for strong problem-solving skills
-                    and the ability to train, motivate, and coach team members.
+                    ensure scalable and maintainable projects. Her design
+                    background ensures that these solutions are both
+                    user-focused and aesthetically pleasing. Within the agency,
+                    she is recognised for strong problem-solving skills and the
+                    ability to train, motivate, and coach team members.
                 </p>
                 <p>
                     Currently, Shelley is Studio Lead at{' '}
@@ -86,7 +88,7 @@ export default function index({ data }) {
                     >
                         Swim Communications
                     </a>{' '}
-                    and freelances under{' '}
+                    and freelances as{' '}
                     <a
                         href="https://www.brolgadigital.com.au"
                         target={'_blank'}
