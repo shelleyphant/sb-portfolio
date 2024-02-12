@@ -12,8 +12,6 @@ exports.createPages = ({ actions, graphql }) => {
                         id
                         frontmatter {
                             title
-                            tagline
-                            details
                             slug
                         }
                         body
