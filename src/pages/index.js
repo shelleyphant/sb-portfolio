@@ -49,7 +49,7 @@ export default function index({ data }) {
                 <h2 className="heading">About Shelley</h2>
                 <StaticImage
                     src="../images/shelley and chester 1.jpeg"
-                    className="float-left w-full mb-4 mr-8 md:w-1/2 lg:w-2/5"
+                    className="float-left w-full mb-4 mr-0 sm:mr-8 sm:w-1/2 lg:w-2/5"
                     alt="Shelley Bassett and her ginger cat Chester"
                 />
                 <p>

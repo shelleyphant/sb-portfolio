@@ -14,8 +14,8 @@ export default function Header() {
         }
     `)
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 h-12 text-white header">
-            <div className="container flex flex-row justify-between h-full m-auto">
+        <div className="fixed top-0 left-0 right-0 z-50 h-24 px-8 text-white sm:h-12 header md:px-12">
+            <div className="flex flex-col justify-center h-full gap-2 m-auto sm:justify-between sm:flex-row ">
                 <Link to="/" className="flex items-center">
                     <span className="name">Shelley Bassett</span>
                 </Link>

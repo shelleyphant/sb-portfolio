@@ -36,13 +36,6 @@ p {
 }
 
 .content {
-    border-top: #f8f8f8 solid 2px;
-    padding: 50px;
-
-    &:first-of-type {
-        border: 0;
-    }
-
     a {
         @apply font-roboto font-light text-dark-grey relative z-10;
 
@@ -151,10 +144,10 @@ p {
     }
 }
 
-section {
+section,
+.content {
+    @apply overflow-auto p-8 md:p-12;
     border-top: #f8f8f8 solid 2px;
-    padding: 50px;
-    overflow: auto;
 
     &:first-of-type {
         border: 0;

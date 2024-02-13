@@ -4,7 +4,7 @@ import * as Icon from 'react-feather'
 
 export default function Footer() {
     return (
-        <footer className="flex flex-wrap gap-12 p-12 footer">
+        <footer className="flex flex-wrap gap-12 p-8 md:p-12 footer">
             <div className="basis-full">
                 <Link to="/">
                     <span className="name">Shelley Bassett</span>

@@ -4,10 +4,10 @@ import Footer from './Footer'
 
 export default function Layout({ children }) {
     return (
-        <div className="bg-light-grey p-12 pb-0 min-h-screen">
+        <div className="min-h-screen !pt-20 sm:!pt-8 p-6 !pb-0 bg-light-grey sm:p-12">
             <Header />
 
-            <div className="bg-white container m-auto mt-14 rounded-lg flex flex-col justify-between max-w-screen-xl">
+            <div className="container flex flex-col justify-between max-w-screen-xl m-auto bg-white rounded-lg mt-14">
                 {children}
                 <Footer />
             </div>
