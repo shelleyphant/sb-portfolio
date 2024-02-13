@@ -7,19 +7,19 @@ import { useStaticQuery, graphql } from 'gatsby'
 export default function Header() {
     const data = useStaticQuery(graphql`
         {
-            file(sourceInstanceName: { eq: "downloads" }) {
+            file(name: { eq: "Resume 2024" }) {
                 publicURL
                 name
             }
         }
     `)
     return (
-        <div className="left-0 right-0 h-12 fixed top-0 text-white z-50 header">
-            <div className="container h-full m-auto flex flex-row justify-between">
+        <div className="fixed top-0 left-0 right-0 z-50 h-12 text-white header">
+            <div className="container flex flex-row justify-between h-full m-auto">
                 <Link to="/" className="flex items-center">
                     <span className="name">Shelley Bassett</span>
                 </Link>
-                <ul className="flex flex-row gap-3 items-center font-raleway font-normal">
+                <ul className="flex flex-row items-center gap-3 font-normal font-raleway">
                     <li>
                         <AnchorLink
                             to="/#about"
