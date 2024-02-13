@@ -4,15 +4,22 @@ title: 'Custom WordPress Builds'
 thumbnail: ../images/brolgadigital.png
 year: 2018 - 2024
 techstack:
-    - Roots
+    - Roots Sage
+    - Roots Bedrock
     - WordPress
     - GitHub CI/CD
 ---
 
 ## Theme development using Roots.io
 
+Building WordPress themes using Bedrock and Sage from the Roots.io stack gives custom sites a simple starting place and fosters collaboration amongst the development team. By using the Laravel-based Blade templates with TailwindCSS styling, developers always know what to expect when opening an existing project.
+
 ## Setting studio-wide version control
+
+Version control is an important part of any projects development lifecycle, but this is notoriously tricky to manage with WordPress. Beckrock from Roots.io turns WordPress into a Composer package, allowing control over what version is being used and which plugins are installed. This has become a key part of SWiM Communication's studio workflow.
 
 ## Custom Gutenberg blocks
 
 ## Using GitHub for CI/CD
+
+Allowing manual access onto a server should be avoided to reduce human error. With version controlled WordPress, CI/CD was capable via GitHub actions. This was configured to automatically pushed staged changes to a development server, then could manually deploy the final code to the live site. This simple change drastically reduced deployment time and bugs.
