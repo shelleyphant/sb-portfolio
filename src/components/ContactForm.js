@@ -1,13 +1,13 @@
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 
-export default function ContactForm({ Component, pageProps }) {
+export default function ContactForm() {
     const [state, handleSubmit] = useForm('xwkaqlnd')
     if (state.succeeded) {
         return <p>Thanks! Your message has been sent.</p>
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} method="POST">
             <label htmlFor="name">Name</label>
             <input id="name" type="text" name="name"></input>
             <ValidationError prefix="Name" field="name" errors={state.errors} />
