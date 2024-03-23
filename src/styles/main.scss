@@ -39,16 +39,6 @@ p {
         @apply mb-0;
     }
 }
-ul,
-ol {
-    @apply mb-4 pl-4;
-}
-ul {
-    @apply list-disc;
-}
-ol {
-    @apply list-decimal;
-}
 
 .content {
     a {
@@ -66,6 +56,16 @@ ol {
                 @apply bg-light-pink opacity-100;
             }
         }
+    }
+    ul,
+    ol {
+        @apply mb-4 pl-4;
+    }
+    ul {
+        @apply list-disc;
+    }
+    ol {
+        @apply list-decimal;
     }
 
     .project-insights {
