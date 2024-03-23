@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import CaseStudy from '../components/CaseStudy'
 import ContactForm from '../components/ContactForm'
 import { graphql } from 'gatsby'
-import { FormspreeProvider } from '@formspree/react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Helmet } from 'react-helmet'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -620,9 +619,7 @@ export default function index({ data }) {
 
             <section id="contact">
                 <h2 className="heading">Get in Contact</h2>
-                <FormspreeProvider project="1710348955751022432">
-                    <ContactForm />
-                </FormspreeProvider>
+                <ContactForm />
             </section>
         </Layout>
     )
