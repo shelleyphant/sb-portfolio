@@ -367,21 +367,13 @@ form {
     @apply lg:w-2/3 m-auto w-full;
 
     label {
-        font-weight: 400;
-        margin-top: 10px;
-        display: block;
+        @apply font-normal mt-3 block pl-3;
     }
 
     input,
     textarea {
         border: 1px solid lightgrey;
-        border-radius: 4px;
-        padding: 5px 8px;
-        width: 100%;
-        font-size: 1.2em;
-        line-height: 1.5em !important;
-        margin: 5px 0;
-        font-family: 'Roboto', sans-serif;
+        @apply px-3 py-2 w-full mb-2 rounded;
     }
 
     textarea {

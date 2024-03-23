@@ -84,5 +84,17 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: 'gatsby-plugin-load-script',
+            options: {
+                src: 'https://www.google.com/recaptcha/api.js?render={6LcO4aEpAAAAAEDwdADSDJSvgv_j0hAmXBsL9aWN}',
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-load-script',
+            options: {
+                src: '/js/recaptcha.js',
+            },
+        },
     ],
 }
